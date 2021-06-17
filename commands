@@ -35,6 +35,5 @@ sudo tar -cvpz \
 --file backup.tar.gz /
 mv backup_nofiles $(echo $(date +'%Y-%m%d')-backup_nofiles.tar.gz)
 
-
-zsh
-  rehash
+extract ipv6 for duckdns
+ip -6 addr show scope global | grep -o -P '(?<=inet6 ).*(?=/)'
