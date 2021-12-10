@@ -69,6 +69,7 @@ alias vi='nvim'                                            					# Show sizes in 
 alias notify='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 #Add a "dotfiles" alias for .dotfile git repo
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias 'dotfiles-update'='dotfiles commit -a && dotfiles push'
 
 
 #KEYBINDINGS SECTION (use 'cat -v' or 'od -c' to see raw keyboard output)
