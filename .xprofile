@@ -2,14 +2,15 @@ xset -b #disable beep
 
 #dell u2711b config
 	#30fps
-xrandr --newmode "2560x1440_30.00"  146.25  2560 2680 2944 3328  1440 1443 1448 1468 -hsync +vsync
-xrandr --addmode HDMI2 2560x1440_30.00
-xrandr --output HDMI2 --mode 2560x1440_30.00
+#xrandr --newmode "2560x1440_30.00"  146.25  2560 2680 2944 3328  1440 1443 1448 1468 -hsync +vsync
+#xrandr --addmode HDMI2 2560x1440_30.00
+#xrandr --output HDMI2 --mode 2560x1440_30.00
 
 
 
 
 	#60fps 
-#xrandr --newmode "2560x1440_60.00"  312.25  2560 2752 3024 3488  1440 1443 1448 1493 -hsync +vsync
-#xrandr --addmode HDMI2 2560x1440_60.00
-#xrandr --output HDMI2 --mode 2560x1440_60.00
+xrandr --newmode "2560x1440_50" 129.101 2560 2728 3008 3456 1440 1441 1444 1482 -hsync -vsync
+xrandr --addmode HDMI-2 2560x1440_50
+xrandr --output HDMI-2 --mode 2560x1440_50
+
