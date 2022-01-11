@@ -10,7 +10,7 @@ xset -b #disable beep
 
 
 	#60fps 
-xrandr --newmode "2560x1440_50" 129.101 2560 2728 3008 3456 1440 1441 1444 1482 -hsync -vsync
+xrandr --newmode "2560x1440_50" 241.50  2560 2608 2640 2720  1440 1443 1448 1481 +hsync -vsync
 xrandr --addmode HDMI-2 2560x1440_50
 xrandr --output HDMI-2 --mode 2560x1440_50
 
