@@ -66,7 +66,7 @@ alias df='df -h'                                                					# Human-rea
 alias free='free -m'
 alias vi='nvim'                                            					# Show sizes in MB
 alias ll='ls -l'
-alias la= 'ls -a'
+alias la='ls -a'
 # Add an "alert" alias for long running commands.  Use like so: 'sleep 10; alert'
 alias notify='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 #Add a "dotfiles" alias for .dotfile git repo
