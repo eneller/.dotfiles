@@ -19,7 +19,7 @@ set incsearch " search while typing
 set wildmode=longest,list,full " enable autocomplete
 set smartcase " ignore case if lowercase, match case if uppercase used
 set tabstop=4 softtabstop=4 " replace tabs with 4 spaces
-set expandtab
+"set expandtab
 set smartindent 
 set termguicolors " colors???
 set exrc
