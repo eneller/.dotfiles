@@ -16,8 +16,8 @@ set number " Show line numbers
 set relativenumber "show relative line numbers except for the one im on
 set visualbell " Blink cursor on error instead of beeping 
 set incsearch " search while typing
-set wildmode=longest,list,full " enable autocomplete
 set smartcase " ignore case if lowercase, match case if uppercase used
+set wildmode=longest,list,full " enable autocomplete
 set tabstop=4 softtabstop=4 " replace tabs with 4 spaces
 "set expandtab
 set smartindent 
