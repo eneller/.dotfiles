@@ -12,7 +12,7 @@ set $inner_gaps 15
 set $outer_gaps 15
 set $term --no-startup-id $TERMINAL
 
-# set modifier key, Mod4 is super (windows)
+# set modifier key, Mod4 is super (windows), Mod1 = Alt key
 set $mod Mod4 
 set $stoprec --no-startup-id dmenurecord kill
 # power options
@@ -25,6 +25,10 @@ set $hibernate sudo -A systemctl suspend
 for_window [class="^.*"] border pixel 2
 gaps inner $inner_gaps
 gaps outer $outer_gaps
+# Smart gaps (gaps used if only more than one container on the workspace)
+#smart_gaps on
+smart_borders on
+
 
 # #---Dropdown Windows---# #
 # General dropdown window traits. The order can matter.
@@ -37,13 +41,24 @@ for_window [instance="dropdown_dropdowncalc"] resize set 800 300
 for_window [instance="dropdown_tmuxdd"] border pixel 3
 for_window [instance="dropdown_dropdowncalc"] border pixel 2
 for_window [instance="dropdown_*"] move position center
+for_window [class="i3_help"] floating enable sticky enable border normal
+for_window [class="Pacucontrol"] floating enable 
 
 bar {
 	font pango:mono 10
-	status_command i3blocks
+#	status_command i3blocks
 	position top
 	mode dock
 	modifier None
+	colors {
+    background $black
+    #                  border             background         text
+    focused_workspace  $blue              $blue              $black
+    inactive_workspace $black             $black             $white
+    active_workspace   $black             $black             $blue
+    urgent_workspace   $pink              $pink              $black
+    binding_mode       $black             $orange            $black
+  }
 }
 
 # #--- i3 keybinds ---# #
@@ -58,6 +73,11 @@ bindsym $mod+Shift+p		exec --no-startup-id i3resize right
 bindsym $mod+Shift+r		exec --no-startup-id winresize
 bindsym $mod+f			fullscreen toggle
 bindsym $mod+Shift+f		mode "$freeze" ;; exec --no-startup-id notify-send "Distraction-free mode activated." "Press Super+Shift+f to return."
+# bindsym $mod+h			split h;exec notify-send 'tile horizontally'
+# bindsym $mod+v			split v;exec notify-send 'tile vertically'
+
+# No focus on mouse over
+focus_follows_mouse no
 
 # #---Arrow Keys---# #
 bindsym $mod+Left		focus left
@@ -135,4 +155,23 @@ bindsym $mod+plus		exec --no-startup-id pulsemixer --change-volume +5 && pkill -
 bindsym $mod+Shift+plus		exec --no-startup-id pulsemixer --change-volume +15 && pkill -RTMIN+10 i3blocks
 bindsym $mod+minus 		exec --no-startup-id pulsemixer --change-volume -5 && pkill -RTMIN+10 i3blocks
 bindsym $mod+Shift+minus	exec --no-startup-id pulsemixer --change-volume -15 && pkill -RTMIN+10 i3blocks
+
+
+
+# #--- Colors ---# #
+set $black 	           #272822
+set $white             #FFFFFF
+set $pink              #F92672
+set $blue              #66D9EF
+set $green             #A6E22E
+set $orange            #FD971F
+set $yellow            #E6DB74
+set $purple            #AE81FF
+
+# class                 border  bg.    text    indicator child_border
+client.focused          $black  $black $green  $blue   $blue
+client.focused_inactive $black  $black $blue   $black  $black
+client.unfocused        $black  $black $white  $black  $black
+
+client.background       #ff0000
 
