@@ -173,5 +173,5 @@ client.focused          $black  $black $green  $blue   $blue
 client.focused_inactive $black  $black $blue   $black  $black
 client.unfocused        $black  $black $white  $black  $black
 
-client.background       #ff0000
-
+client.background		#f1232
+exec --no-startup-id nitrogen --set-zoom-fill $HOME/.config/i3/bg.png 
