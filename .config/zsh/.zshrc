@@ -122,7 +122,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 	#ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]=fg=009
 	#ZSH_HIGHLIGHT_STYLES[assign]=none
 
-	[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh									# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+	[[ ! -f "$ZDOTDIR/p10k.zsh" ]] || source "$ZDOTDIR/p10k.zsh"									# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 			# load fish-completion, needs to be sourced after syntax highlighting
