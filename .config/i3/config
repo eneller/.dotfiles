@@ -174,4 +174,7 @@ client.focused_inactive $black  $black $blue   $black  $black
 client.unfocused        $black  $black $white  $black  $black
 
 client.background		#f1232
+# set background picture
 exec --no-startup-id nitrogen --set-zoom-fill $HOME/.config/i3/bg.png 
+# start network manager applet
+exec --no-startup-id nm-applet
