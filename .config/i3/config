@@ -7,14 +7,10 @@
 #
 # export TERMINAL="st"
 
-# #---Basic Definitions---# #
-set $inner_gaps 15
-set $outer_gaps 15
-set $term --no-startup-id $TERMINAL
 
 # set modifier key, Mod4 is super (windows), Mod1 = Alt key
 set $mod Mod4 
-set $stoprec --no-startup-id dmenurecord kill
+
 # power options
 set $shutdown shutdown -h now
 set $reboot reboot
@@ -36,13 +32,10 @@ for_window [instance="dropdown_*"] floating enable
 for_window [instance="dropdown_*"] move scratchpad
 for_window [instance="dropdown_*"] sticky enable
 for_window [instance="dropdown_*"] scratchpad show
-for_window [instance="dropdown_tmuxdd"] resize set 625 450
-for_window [instance="dropdown_dropdowncalc"] resize set 800 300
-for_window [instance="dropdown_tmuxdd"] border pixel 3
-for_window [instance="dropdown_dropdowncalc"] border pixel 2
+for_window [instance="dropdown_tmux"] resize set 625 450
+for_window [instance="dropdown_tmux"] border pixel 3
 for_window [instance="dropdown_*"] move position center
 for_window [class="i3_help"] floating enable sticky enable border normal
-for_window [class="Pacucontrol"] floating enable 
 
 
 # #--- i3 keybinds ---# #
@@ -125,15 +118,15 @@ bindsym $mod+0		workspace $ws10
 # #--- Keyboard shortcuts ---# #
 bindsym $mod+d			exec --no-startup-id dmenu_run
 bindsym $mod+Return 		exec $term
+bindsym $mod+w			exec --no-startup-id $BROWSER
+# Show selection:
+bindsym $mod+Insert		exec --no-startup-id showclip
+
 bindsym $mod+Shift+Return	exec --no-startup-id samedir
 
 bindsym $mod+q			[con_id="__focused__" instance="^(?!dropdown_).*$"] kill
 bindsym $mod+Shift+q		[con_id="__focused__" instance="^(?!dropdown_).*$"] exec --no-startup-id kill -9 `xdotool getwindowfocus getwindowpid`
 
-bindsym $mod+w			exec --no-startup-id $BROWSER
-
-# Show selection:
-bindsym $mod+Insert		exec --no-startup-id showclip
 
 
 
@@ -146,13 +139,13 @@ set $green             #A6E22E
 set $orange            #FD971F
 set $yellow            #E6DB74
 set $purple            #AE81FF
-
 # class                 border  bg.    text    indicator child_border
 client.focused          $black  $black $green  $blue   $blue
 client.focused_inactive $black  $black $blue   $black  $black
 client.unfocused        $black  $black $white  $black  $black
-
 client.background		#f1232
+
+# #--- EXTERNAL PROGRAMS---# #
 # set background picture
 exec --no-startup-id nitrogen --set-zoom-fill $HOME/.config/i3/bg.png 
 # start xfce bar
