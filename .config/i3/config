@@ -36,7 +36,7 @@ for_window [instance="dropdown_tmux"] resize set 625 450
 for_window [instance="dropdown_tmux"] border pixel 3
 # start scratchpads
 exec --no-startup-id bitwarden-desktop
-for_window [class=bitwarden] move scratchpad
+for_window [class="bitwarden"] move scratchpad
 
 
 # #--- i3 keybinds ---# #
@@ -72,6 +72,7 @@ bindsym $mod+Shift+Right 	move right
 bindsym $mod+Ctrl+Right		move workspace to output right
 
 # #---Workspaces---# #
+# prior and next ar PgUp and PgDown
 bindsym $mod+Prior		workspace prev
 bindsym $mod+Shift+Prior	move container to workspace prev
 bindsym $mod+Next		workspace next
@@ -154,3 +155,4 @@ exec --no-startup-id xfce4-panel --disable-wm-check
 # try to start tray tools / applets manually
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
+
