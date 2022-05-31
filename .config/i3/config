@@ -53,6 +53,9 @@ bindsym $mod+q [con_id="__focused__" instance="^(?!dropdown_).*$"] kill
 
 # No focus on mouse over (allows scrolling without changing focus)
 focus_follows_mouse no
+# remove title bar
+default_border pixel 1
+default_floating_border pixel 1
 
 # ARROW KEYS
 bindsym $mod+Ctrl+Left		move workspace to output left

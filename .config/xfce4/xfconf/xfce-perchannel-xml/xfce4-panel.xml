@@ -1,53 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <channel name="xfce4-panel" version="1.0">
-  <property name="panels" type="uint" value="1">
+  <property name="panels" type="array">
+    <value type="int" value="0"/>
     <property name="panel-0" type="empty">
-      <property name="position" type="string" value="p=8;x=960;y=1066"/>
+      <property name="position" type="string" value="p=6;x=960;y=18"/>
       <property name="length" type="uint" value="100"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="8"/>
-        <value type="int" value="3"/>
         <value type="int" value="7"/>
-        <value type="int" value="19"/>
-        <value type="int" value="17"/>
-        <value type="int" value="11"/>
-        <value type="int" value="2"/>
-        <value type="int" value="12"/>
-        <value type="int" value="18"/>
-        <value type="int" value="16"/>
-        <value type="int" value="15"/>
-        <value type="int" value="13"/>
-        <value type="int" value="14"/>
-        <value type="int" value="10"/>
-        <value type="int" value="1"/>
         <value type="int" value="4"/>
+        <value type="int" value="6"/>
         <value type="int" value="9"/>
         <value type="int" value="5"/>
-        <value type="int" value="6"/>
       </property>
       <property name="role" type="string" value="xfce4-panel-12965750720"/>
       <property name="length-adjust" type="bool" value="true"/>
       <property name="background-style" type="uint" value="0"/>
-      <property name="size" type="uint" value="25"/>
+      <property name="size" type="uint" value="36"/>
       <property name="mode" type="uint" value="0"/>
       <property name="autohide-behavior" type="uint" value="0"/>
       <property name="disable-struts" type="bool" value="false"/>
-      <property name="icon-size" type="uint" value="24"/>
-      <property name="span-monitors" type="bool" value="true"/>
-      <property name="nrows" type="uint" value="1"/>
-      <property name="leave-opacity" type="uint" value="100"/>
-      <property name="enter-opacity" type="uint" value="100"/>
-      <property name="output-name" type="string" value="Automatic"/>
+      <property name="icon-size" type="uint" value="28"/>
+      <property name="span-monitors" type="bool" value="false"/>
     </property>
   </property>
   <property name="plugins" type="empty">
-    <property name="plugin-4" type="string" value="pager">
-      <property name="rows" type="uint" value="1"/>
-    </property>
-    <property name="plugin-3" type="string" value="tasklist">
-      <property name="grouping" type="uint" value="1"/>
+    <property name="plugin-4" type="string" value="pager"/>
+    <property name="plugin-6" type="string" value="systray">
+      <property name="names-visible" type="array">
+        <value type="string" value="pnmixer"/>
+        <value type="string" value="manjaro-settings-manager-daemon"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="orage"/>
+        <value type="string" value="pamac-tray"/>
+        <value type="string" value="blueman-applet"/>
+        <value type="string" value="clipman"/>
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="xnoise"/>
+      </property>
+      <property name="show-frame" type="bool" value="false"/>
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="user authentication required for wi-fi network “fritz!box 3272 1”…"/>
+        <value type="string" value="bluetooth disabled"/>
+        <value type="string" value="ethernet network connection “wired connection 1” active"/>
+        <value type="string" value="xfce terminal"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="pamac-tray"/>
+        <value type="string" value="clipman"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="MSM Notifier"/>
+        <value type="string" value="blueman"/>
+      </property>
     </property>
     <property name="plugin-7" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
@@ -55,157 +61,9 @@
     </property>
     <property name="plugin-9" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="audacious;chromium.instance116840;chromium.instance15394;chromium.instance16675;chromium.instance190724;chromium.instance199337;chromium.instance33887;chromium.instance35536;chromium.instance36975;chromium.instance3723;chromium.instance48609;chromium.instance54307;chromium.instance58030;chromium.instance6729;chromium.instance8133;chromium.instance9285;firefox.instance1001;firefox.instance1012;firefox.instance1013;firefox.instance1014;firefox.instance1024;firefox.instance1025;firefox.instance1026;firefox.instance1028;firefox.instance1029;firefox.instance1032;firefox.instance1034;firefox.instance1038;firefox.instance1039;firefox.instance1043;firefox.instance1045;firefox.instance1047;firefox.instance1051;firefox.instance1053;firefox.instance1057;firefox.instance1060;firefox.instance1061;firefox.instance1062;firefox.instance106479;firefox.instance1065;firefox.instance1069;firefox.instance106915;firefox.instance1072;firefox.instance1073;firefox.instance1074;firefox.instance1078;firefox.instance1079;firefox.instance1082;firefox.instance1085;firefox.instance1086;firefox.instance1089;firefox.instance1091;firefox.instance1092;firefox.instance1097;firefox.instance1098;firefox.instance1099;firefox.instance1100;firefox.instance1101;firefox.instance1102;firefox.instance1103;firefox.instance1107;firefox.instance1110;firefox.instance1111;firefox.instance1112;firefox.instance1113;firefox.instance1114;firefox.instance1116;firefox.instance1124;firefox.instance1126;firefox.instance1129;firefox.instance1132;firefox.instance1133;firefox.instance1137;firefox.instance1141;firefox.instance1142;firefox.instance1144;firefox.instance1148;firefox.instance1150;firefox.instance1152;firefox.instance1153;firefox.instance1155;firefox.instance1166;firefox.instance1167;firefox.instance1169;firefox.instance1170;firefox.instance1171;firefox.instance1172;firefox.instance1176;firefox.instance1183;firefox.instance1184;firefox.instance1185;firefox.instance1186;firefox.instance1191;firefox.instance1197;firefox.instance1198;firefox.instance1199;firefox.instance1211;firefox.instance1213;firefox.instance1218;firefox.instance1227;firefox.instance1228;firefox.instance1229;firefox.instance1234;firefox.instance1237;firefox.instance1238;firefox.instance1242;firefox.instance1247;firefox.instance1250;firefox.instance1251;firefox.instance1259;firefox.instance1260;firefox.instance1261;firefox.instance1264;firefox.instance1274;firefox.instance1280;firefox.instance1296;firefox.instance1303;firefox.instance1312;firefox.instance1316;firefox.instance13195;firefox.instance1324;firefox.instance1332;firefox.instance1339;firefox.instance1343;firefox.instance1344;firefox.instance1345;firefox.instance1347;firefox.instance1348;firefox.instance1349;firefox.instance1352;firefox.instance1359;firefox.instance1360;firefox.instance1361;firefox.instance1364;firefox.instance1368;firefox.instance1369;firefox.instance1372;firefox.instance1375;firefox.instance1376;firefox.instance1377;firefox.instance1380;firefox.instance1384;firefox.instance1389;firefox.instance1391;firefox.instance1393;firefox.instance1396;firefox.instance1403;firefox.instance1410;firefox.instance1411;firefox.instance1416;firefox.instance1417;firefox.instance1431;firefox.instance1476;firefox.instance1491;firefox.instance15455;firefox.instance1572;firefox.instance1607;firefox.instance1630;firefox.instance16900;firefox.instance1735;firefox.instance17757;firefox.instance1779;firefox.instance18124;firefox.instance18355;firefox.instance18913;firefox.instance19978;firefox.instance20378;firefox.instance20690;firefox.instance2132;firefox.instance33983;firefox.instance352664;firefox.instance35363;firefox.instance37297;firefox.instance37857;firefox.instance41504;firefox.instance44688;firefox.instance4547;firefox.instance69264;firefox.instance70365;firefox.instance73173;firefox.instance73732;firefox.instance74525;firefox.instance78455;firefox.instance79663;firefox.instance8017;firefox.instance82018;firefox.instance83658;firefox.instance8811;firefox.instance903;firefox.instance9047;firefox.instance933;firefox.instance957;firefox.instance973;firefox.instance980;firefox.instance985;firefox.instance986;firefox.instance987;firefox.instance9878;firefox.instance990;firefox.instance991;vlc;vlc.instance36113;vlc.instance36145;vlc.instance38847;vlc.instance39391;vlc.instance40360;vlc.instance45691;vlc.instance5029;vlc.instance53583;vlc.instance59664;vlc.instance7934"/>
     </property>
     <property name="plugin-8" type="string" value="whiskermenu"/>
-    <property name="plugin-5" type="string" value="clock">
-      <property name="mode" type="uint" value="2"/>
-      <property name="timezone" type="string" value=""/>
-    </property>
-    <property name="plugin-1" type="string" value="showdesktop"/>
-    <property name="plugin-2" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16027797001.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-6" type="string" value="systray">
-      <property name="names-ordered" type="array">
-        <value type="string" value="screenkey"/>
-        <value type="string" value="task manager"/>
-        <value type="string" value="redshift-gtk"/>
-        <value type="string" value="steam"/>
-        <value type="string" value="kazam"/>
-        <value type="string" value="ticktick"/>
-        <value type="string" value="mailspring"/>
-        <value type="string" value="orage"/>
-        <value type="string" value="discord"/>
-        <value type="string" value="vlc"/>
-        <value type="string" value="blueman-tray"/>
-        <value type="string" value="telegramdesktop"/>
-        <value type="string" value="thunar"/>
-        <value type="string" value="xfce terminal"/>
-        <value type="string" value="networkmanager applet"/>
-        <value type="string" value="bluetooth enabled"/>
-        <value type="string" value="clipman"/>
-        <value type="string" value="drop-down terminal"/>
-        <value type="string" value="pamac-tray"/>
-        <value type="string" value="xfce4-power-manager"/>
-        <value type="string" value="msm notifier"/>
-      </property>
-      <property name="square-icons" type="bool" value="false"/>
-      <property name="names-hidden" type="array">
-        <value type="string" value="orage"/>
-        <value type="string" value="mailspring"/>
-        <value type="string" value="discord"/>
-        <value type="string" value="vlc"/>
-        <value type="string" value="ticktick"/>
-        <value type="string" value="telegramdesktop"/>
-      </property>
-      <property name="known-legacy-items" type="array">
-        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (65%)"/>
-        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (68%)"/>
-        <value type="string" value="xfce terminal"/>
-        <value type="string" value="notes"/>
-        <value type="string" value="hexchat"/>
-        <value type="string" value="pidgin"/>
-        <value type="string" value="veracrypt"/>
-        <value type="string" value="thunar"/>
-        <value type="string" value="xfce4-power-manager"/>
-        <value type="string" value="pamac-tray"/>
-        <value type="string" value="clipman"/>
-        <value type="string" value="networkmanager applet"/>
-      </property>
-      <property name="known-items" type="array">
-        <value type="string" value="qBittorrent"/>
-        <value type="string" value="SimpleScreenRecorder"/>
-        <value type="string" value="hp-systray"/>
-        <value type="string" value="discord1"/>
-        <value type="string" value="MSM Notifier"/>
-        <value type="string" value="redshift"/>
-        <value type="string" value="blueman"/>
-        <value type="string" value="vlc"/>
-        <value type="string" value="TelegramDesktop"/>
-      </property>
-      <property name="hidden-legacy-items" type="array">
-        <value type="string" value="pidgin"/>
-        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (65%)"/>
-        <value type="string" value="thunar"/>
-        <value type="string" value="veracrypt"/>
-        <value type="string" value="xfce terminal"/>
-        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (68%)"/>
-        <value type="string" value="hexchat"/>
-        <value type="string" value="notes"/>
-      </property>
-      <property name="single-row" type="bool" value="true"/>
-      <property name="hide-new-items" type="bool" value="true"/>
-      <property name="symbolic-icons" type="bool" value="false"/>
-      <property name="icon-size" type="int" value="22"/>
-      <property name="hidden-items" type="array">
-        <value type="string" value="redshift"/>
-        <value type="string" value="MSM Notifier"/>
-        <value type="string" value="hp-systray"/>
-        <value type="string" value="TelegramDesktop"/>
-        <value type="string" value="qBittorrent"/>
-        <value type="string" value="vlc"/>
-        <value type="string" value="discord1"/>
-        <value type="string" value="SimpleScreenRecorder"/>
-      </property>
-    </property>
-    <property name="plugin-10" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16027803512.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-11" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16027809303.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-14" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16027809596.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-17" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16040770632.desktop"/>
-      </property>
-    </property>
-    <property name="clipman" type="empty">
-      <property name="tweaks" type="empty">
-        <property name="never-confirm-history-clear" type="bool" value="true"/>
-      </property>
-    </property>
-    <property name="plugin-12" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16230888551.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-16" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16391761081.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-18" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16400052981.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-19" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16438997001.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-13" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16473508461.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-15" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16482936091.desktop"/>
-      </property>
-    </property>
+    <property name="plugin-5" type="string" value="clock"/>
   </property>
   <property name="configver" type="int" value="2"/>
 </channel>
