@@ -14,7 +14,6 @@ set $mod Mod4
 # power options
 set $shutdown shutdown -h now
 set $reboot reboot
-set $netrefresh --no-startup-id sudo -A systemctl restart NetworkManager
 set $hibernate sudo -A systemctl suspend
 
 # #---Gaps---# #
@@ -27,15 +26,17 @@ smart_borders on
 
 
 # #---Dropdown Windows---# #
+# Scratchpad binds
+bindsym $mod+p [class="bitwarden"] scratchpad show; move position center
 # General dropdown window traits. The order can matter.
-for_window [instance="dropdown_*"] floating enable
-for_window [instance="dropdown_*"] move scratchpad
+# sticky allows windows to stay visible even when switching workspaces
 for_window [instance="dropdown_*"] sticky enable
-for_window [instance="dropdown_*"] scratchpad show
+# Specific dropdown window traits
 for_window [instance="dropdown_tmux"] resize set 625 450
 for_window [instance="dropdown_tmux"] border pixel 3
-for_window [instance="dropdown_*"] move position center
-for_window [class="i3_help"] floating enable sticky enable border normal
+# start scratchpads
+exec --no-startup-id bitwarden-desktop
+for_window [class=bitwarden] move scratchpad
 
 
 # #--- i3 keybinds ---# #
