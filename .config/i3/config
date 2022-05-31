@@ -5,7 +5,6 @@
 # This config file will use environmental variables such as $BROWSER and $TERMINAL.
 # You can set these variables in ~/.profile or ~/.bash_profile if you have it as below:
 #
-# export TERMINAL="st"
 
 
 # set modifier key, Mod4 is super (windows), Mod1 = Alt key
@@ -16,7 +15,7 @@ set $shutdown shutdown -h now
 set $reboot reboot
 set $hibernate sudo -A systemctl suspend
 
-# #---Gaps---# #
+# GAPS
 for_window [class="^.*"] border pixel 2
 gaps inner $inner_gaps
 gaps outer $outer_gaps
@@ -25,7 +24,7 @@ gaps outer $outer_gaps
 smart_borders on
 
 
-# #---Dropdown Windows---# #
+# DROPDOWN
 # Scratchpad binds
 bindsym $mod+p [class="bitwarden"] scratchpad show; move position center
 # General dropdown window traits. The order can matter.
@@ -39,7 +38,7 @@ exec --no-startup-id bitwarden-desktop
 for_window [class="bitwarden"] move scratchpad
 
 
-# #--- i3 keybinds ---# #
+# i3 BINDS
 bindsym $mod+h			focus left
 bindsym $mod+j			focus down
 bindsym $mod+k			focus up
@@ -57,7 +56,7 @@ bindsym $mod+Shift+f		mode "$freeze" ;; exec --no-startup-id notify-send "Distra
 # No focus on mouse over
 focus_follows_mouse no
 
-# #---Arrow Keys---# #
+# ARROW KEYS
 bindsym $mod+Left		focus left
 bindsym $mod+Shift+Left		move left
 bindsym $mod+Ctrl+Left		move workspace to output left
@@ -71,7 +70,7 @@ bindsym $mod+Right 		focus right
 bindsym $mod+Shift+Right 	move right
 bindsym $mod+Ctrl+Right		move workspace to output right
 
-# #---Workspaces---# #
+# WORKSPACES
 # prior and next ar PgUp and PgDown
 bindsym $mod+Prior		workspace prev
 bindsym $mod+Shift+Prior	move container to workspace prev
@@ -117,22 +116,16 @@ bindsym $mod+9		workspace $ws9
 bindsym $mod+0		workspace $ws10
 
 
-# #--- Keyboard shortcuts ---# #
+# KEYBOARD SHORTCUTS
 bindsym $mod+d			exec --no-startup-id dmenu_run
 bindsym $mod+Return 		exec $term
 bindsym $mod+w			exec --no-startup-id $BROWSER
 # Show selection:
 bindsym $mod+Insert		exec --no-startup-id showclip
 
-bindsym $mod+Shift+Return	exec --no-startup-id samedir
-
-bindsym $mod+q			[con_id="__focused__" instance="^(?!dropdown_).*$"] kill
-bindsym $mod+Shift+q		[con_id="__focused__" instance="^(?!dropdown_).*$"] exec --no-startup-id kill -9 `xdotool getwindowfocus getwindowpid`
 
 
-
-
-# #--- Colors ---# #
+# COLORS
 set $black 	           #272822
 set $white             #FFFFFF
 set $pink              #F92672
@@ -147,7 +140,7 @@ client.focused_inactive $black  $black $blue   $black  $black
 client.unfocused        $black  $black $white  $black  $black
 client.background		#f1232
 
-# #--- EXTERNAL PROGRAMS---# #
+# EXTERNAL 
 # set background picture
 exec --no-startup-id nitrogen --set-zoom-fill $HOME/.config/i3/bg.png 
 # start xfce bar
