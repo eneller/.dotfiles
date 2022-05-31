@@ -1,14 +1,15 @@
 # vim: filetype=i3config
 
 # this config is based on github.com:LukeSmithxyz/voidrice 884dcbdc4792eed95e558af84491eb3100d314a2
+# to immediately apply a new config, run `i3-msg reload; i3-msg restart`
 
 # This config file will use environmental variables such as $BROWSER and $TERMINAL.
 # You can set these variables in ~/.profile or ~/.bash_profile if you have it as below:
-#
 
 
 # set modifier key, Mod4 is super (windows), Mod1 = Alt key
 set $mod Mod4 
+set $termEm xfce4-terminal
 
 # power options
 set $shutdown shutdown -h now
@@ -33,34 +34,30 @@ for_window [class="bitwarden"] move scratchpad
 
 # i3 BINDS
 bindsym $mod+h			focus left
+bindsym $mod+Shift+h		move left
 bindsym $mod+j			focus down
+bindsym $mod+Shift+j		move down
 bindsym $mod+k			focus up
+bindsym $mod+Shift+k		move up
 bindsym $mod+l			focus right
+bindsym $mod+Shift+l		move right
 bindsym $mod+Shift+u		exec --no-startup-id i3resize left
 bindsym $mod+Shift+i		exec --no-startup-id i3resize down
 bindsym $mod+Shift+o		exec --no-startup-id i3resize up
 bindsym $mod+Shift+p		exec --no-startup-id i3resize right
 bindsym $mod+Shift+r		exec --no-startup-id winresize
 bindsym $mod+f			fullscreen toggle
-bindsym $mod+Shift+f		mode "$freeze" ;; exec --no-startup-id notify-send "Distraction-free mode activated." "Press Super+Shift+f to return."
-# bindsym $mod+h			split h;exec notify-send 'tile horizontally'
-# bindsym $mod+v			split v;exec notify-send 'tile vertically'
+bindsym $mod+q [con_id="__focused__" instance="^(?!dropdown_).*$"] kill
+# bindsym $mod+o			split h;exec notify-send 'tile horizontally'
+# bindsym $mod+i			split v;exec notify-send 'tile vertically'
 
-# No focus on mouse over
+# No focus on mouse over (allows scrolling without changing focus)
 focus_follows_mouse no
 
 # ARROW KEYS
-bindsym $mod+Left		focus left
-bindsym $mod+Shift+Left		move left
 bindsym $mod+Ctrl+Left		move workspace to output left
-bindsym $mod+Down		focus down
-bindsym $mod+Shift+Down		move down
 bindsym $mod+Ctrl+Down		move workspace to output down
-bindsym $mod+Up			focus up
-bindsym $mod+Shift+Up		move up
 bindsym $mod+Ctrl+Up		move workspace to output up
-bindsym $mod+Right 		focus right
-bindsym $mod+Shift+Right 	move right
 bindsym $mod+Ctrl+Right		move workspace to output right
 
 # WORKSPACES
@@ -71,20 +68,7 @@ bindsym $mod+Next		workspace next
 bindsym $mod+Shift+Next		move container to workspace next
 bindsym $mod+Tab		workspace back_and_forth
 
-
-# move focused container to workspace
-bindsym $mod+Shift+1	move container to workspace $ws1
-bindsym $mod+Shift+2	move container to workspace $ws2
-bindsym $mod+Shift+3	move container to workspace $ws3
-bindsym $mod+Shift+4	move container to workspace $ws4
-bindsym $mod+Shift+5	move container to workspace $ws5
-bindsym $mod+Shift+6	move container to workspace $ws6
-bindsym $mod+Shift+7	move container to workspace $ws7
-bindsym $mod+Shift+8	move container to workspace $ws8
-bindsym $mod+Shift+9	move container to workspace $ws9
-bindsym $mod+Shift+0	move container to workspace $ws10
-
-
+# name workspaces
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -98,20 +82,30 @@ set $ws10 "10"
 
 # switch to workspace
 bindsym $mod+1		workspace $ws1
+bindsym $mod+Shift+1	move container to workspace $ws1
 bindsym $mod+2		workspace $ws2
+bindsym $mod+Shift+2	move container to workspace $ws2
 bindsym $mod+3		workspace $ws3
+bindsym $mod+Shift+3	move container to workspace $ws3
 bindsym $mod+4		workspace $ws4
+bindsym $mod+Shift+4	move container to workspace $ws4
 bindsym $mod+5		workspace $ws5
+bindsym $mod+Shift+5	move container to workspace $ws5
 bindsym $mod+6		workspace $ws6
+bindsym $mod+Shift+6	move container to workspace $ws6
 bindsym $mod+7		workspace $ws7
+bindsym $mod+Shift+7	move container to workspace $ws7
 bindsym $mod+8		workspace $ws8
+bindsym $mod+Shift+8	move container to workspace $ws8
 bindsym $mod+9		workspace $ws9
+bindsym $mod+Shift+9	move container to workspace $ws9
 bindsym $mod+0		workspace $ws10
+bindsym $mod+Shift+0	move container to workspace $ws10
 
 
 # KEYBOARD SHORTCUTS
 bindsym $mod+d			exec --no-startup-id dmenu_run
-bindsym $mod+Return 		exec $term
+bindsym $mod+Return 		exec --no-startup-id $termEm
 bindsym $mod+w			exec --no-startup-id $BROWSER
 # Show selection:
 bindsym $mod+Insert		exec --no-startup-id showclip
