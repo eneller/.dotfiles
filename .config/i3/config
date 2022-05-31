@@ -20,7 +20,7 @@ set $hibernate sudo -A systemctl suspend
 
 # DROPDOWN
 # Scratchpad binds
-bindsym $mod+p [class="bitwarden"] scratchpad show; move position center
+# bindsym $mod+p [class="bitwarden"] scratchpad show; move position center
 # General dropdown window traits. The order can matter.
 # sticky allows windows to stay visible even when switching workspaces
 for_window [instance="dropdown_*"] sticky enable
@@ -41,10 +41,10 @@ bindsym $mod+k			focus up
 bindsym $mod+Shift+k		move up
 bindsym $mod+l			focus right
 bindsym $mod+Shift+l		move right
-bindsym $mod+Shift+u		exec --no-startup-id i3resize left
-bindsym $mod+Shift+i		exec --no-startup-id i3resize down
-bindsym $mod+Shift+o		exec --no-startup-id i3resize up
-bindsym $mod+Shift+p		exec --no-startup-id i3resize right
+bindsym $mod+Shift+u		resize grow width 1 px or 1 ppt
+bindsym $mod+Shift+i		resize shrink height 1 px or 1 ppt
+bindsym $mod+Shift+o		resize grow height 1 px or 1 ppt
+bindsym $mod+Shift+p		resize shrink width 1 px or 1 ppt
 bindsym $mod+Shift+r		exec --no-startup-id winresize
 bindsym $mod+f			fullscreen toggle
 bindsym $mod+q [con_id="__focused__" instance="^(?!dropdown_).*$"] kill
