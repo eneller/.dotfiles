@@ -15,13 +15,6 @@ set $shutdown shutdown -h now
 set $reboot reboot
 set $hibernate sudo -A systemctl suspend
 
-# GAPS
-for_window [class="^.*"] border pixel 2
-gaps inner $inner_gaps
-gaps outer $outer_gaps
-# Smart gaps (gaps used only if more than one container on the workspace)
-#smart_gaps on
-smart_borders on
 
 
 # DROPDOWN
