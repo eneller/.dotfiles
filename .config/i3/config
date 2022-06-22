@@ -9,7 +9,7 @@
 
 # set modifier key, Mod4 is super (windows), Mod1 = Alt key
 set $mod Mod4 
-set $termEm xfce4-terminal
+set $termEm kitty
 
 # power options
 set $shutdown shutdown -h now
@@ -134,7 +134,6 @@ client.background		#f1232
 # set background picture
 exec --no-startup-id nitrogen --set-zoom-fill $HOME/.config/i3/bg.png 
 # start xfce bar
-exec --no-startup-id xfce4-panel --disable-wm-check
 # try to start tray tools / applets manually
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
