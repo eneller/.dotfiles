@@ -1,5 +1,5 @@
 favorites=xfce4-terminal-emulator.desktop,xfce4-file-manager.desktop,xfce4-web-browser.desktop,xfce4-mail-reader.desktop
-recent=xfce4-terminal-emulator.desktop,xfce-keyboard-settings.desktop,xfce-display-settings.desktop,firefox.desktop,bitwarden.desktop,org.manjaro.pamac.manager.desktop,thunar.desktop
+recent=joplin.desktop,discord.desktop,org.manjaro.pamac.manager.desktop,jetbrains-idea.desktop,bitwarden.desktop,xfce4-terminal-emulator.desktop,xfce-keyboard-settings.desktop,xfce-display-settings.desktop,firefox.desktop,thunar.desktop
 button-icon=/usr/share/icons/whiskermenu-manjaro.svg
 button-single-row=false
 show-button-title=false
@@ -23,8 +23,8 @@ position-categories-horizontal=false
 stay-on-focus-out=false
 profile-shape=0
 confirm-session-command=true
-menu-width=2560
-menu-height=1440
+menu-width=510
+menu-height=549
 menu-opacity=100
 command-settings=xfce4-settings-manager
 show-command-settings=true
