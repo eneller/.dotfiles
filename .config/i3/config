@@ -27,7 +27,7 @@ bar {
   strip_workspace_numbers yes
 
   colors {
-    background #222D31
+    background $black
     statusline #F9FAF9
     separator  #454947
     focused_workspace  #F9FAF9 #16a085 #292F34
