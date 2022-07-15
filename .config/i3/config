@@ -47,6 +47,8 @@ bindsym $mod+Shift+o		resize grow height 1 px or 1 ppt
 bindsym $mod+Shift+p		resize shrink width 1 px or 1 ppt
 bindsym $mod+Shift+r		exec --no-startup-id winresize
 bindsym $mod+f			fullscreen toggle
+bindsym $mod+t      workspace_layout tabbed
+bindsym $mod+Shift+t      workspace_layout tiling
 bindsym $mod+q [con_id="__focused__" instance="^(?!dropdown_).*$"] kill
 # bindsym $mod+o			split h;exec notify-send 'tile horizontally'
 # bindsym $mod+i			split v;exec notify-send 'tile vertically'
