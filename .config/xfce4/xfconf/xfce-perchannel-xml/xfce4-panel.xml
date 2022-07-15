@@ -50,6 +50,18 @@
       </property>
       <property name="show-frame" type="bool" value="false"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (61%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (58%)"/>
+        <value type="string" value="wi-fi network connection “jojo” active: jojo (61%)"/>
+        <value type="string" value="wi-fi network connection “jojo” active: jojo (56%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (67%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (68%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (59%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (72%)"/>
+        <value type="string" value="wi-fi network connection “jojo” active: jojo (51%)"/>
+        <value type="string" value="no network connection"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (63%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (62%)"/>
         <value type="string" value="wi-fi network connection “eduroam” active: eduroam (69%)"/>
         <value type="string" value="wi-fi network connection “eduroam” active: eduroam (65%)"/>
         <value type="string" value="ethernet network connection “wired connection 1” active"/>
@@ -61,20 +73,34 @@
         <value type="string" value="pamac-tray"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="TelegramDesktop"/>
         <value type="string" value="discord1"/>
         <value type="string" value="MSM Notifier"/>
         <value type="string" value="blueman"/>
       </property>
       <property name="hide-new-items" type="bool" value="true"/>
       <property name="hidden-legacy-items" type="array">
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (61%)"/>
         <value type="string" value="wi-fi network connection “eduroam” active: eduroam (69%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (72%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (67%)"/>
+        <value type="string" value="no network connection"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (58%)"/>
         <value type="string" value="wi-fi network connection “eduroam” active: eduroam (65%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (63%)"/>
+        <value type="string" value="wi-fi network connection “jojo” active: jojo (51%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (68%)"/>
+        <value type="string" value="wi-fi network connection “jojo” active: jojo (61%)"/>
+        <value type="string" value="wi-fi network connection “jojo” active: jojo (56%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (62%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (59%)"/>
       </property>
       <property name="single-row" type="bool" value="false"/>
       <property name="symbolic-icons" type="bool" value="false"/>
       <property name="menu-is-primary" type="bool" value="false"/>
       <property name="icon-size" type="int" value="22"/>
       <property name="hidden-items" type="array">
+        <value type="string" value="TelegramDesktop"/>
         <value type="string" value="discord1"/>
       </property>
     </property>
@@ -84,7 +110,7 @@
     </property>
     <property name="plugin-9" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="firefox.instance1304"/>
+      <property name="mpris-players" type="string" value="firefox.instance1205;firefox.instance1213;firefox.instance1233;firefox.instance1304;firefox.instance1314;firefox.instance1618;firefox.instance1640;firefox.instance2190;vlc"/>
     </property>
     <property name="plugin-8" type="string" value="whiskermenu"/>
     <property name="plugin-5" type="string" value="clock"/>
