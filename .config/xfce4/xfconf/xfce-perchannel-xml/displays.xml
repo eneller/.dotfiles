@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <channel name="displays" version="1.0">
-  <property name="ActiveProfile" type="string" value="f66c01e28187a10aaf92e14d049783bc98954348"/>
+  <property name="ActiveProfile" type="string" value="Default"/>
   <property name="Default" type="empty">
     <property name="eDP-1" type="string" value="Laptop">
       <property name="Active" type="bool" value="true"/>
@@ -20,14 +20,48 @@
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
-    <property name="HDMI-2" type="string" value="Dell Inc. 27&quot;">
+    <property name="HDMI-2" type="string" value="Hitachi Ltd 74&quot;">
       <property name="Active" type="bool" value="true"/>
-      <property name="EDID" type="string" value="8e85084eac2a6fde3e963b461d47fe6654a8eca3"/>
+      <property name="EDID" type="string" value="a43a7508431c69883628ce9ec2d8b3307c769e5e"/>
       <property name="Resolution" type="string" value="2560x1440"/>
       <property name="RefreshRate" type="double" value="59.950550"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
-      <property name="Primary" type="bool" value="true"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Scale" type="empty">
+        <property name="X" type="double" value="1.000000"/>
+        <property name="Y" type="double" value="1.000000"/>
+      </property>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="DP-1" type="string" value="Acer Technologies 20&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="83c46d528bd3ae63202b3a95940b788aae98da3d"/>
+      <property name="Resolution" type="string" value="1600x900"/>
+      <property name="RefreshRate" type="double" value="59.946021"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Scale" type="empty">
+        <property name="X" type="double" value="1.000000"/>
+        <property name="Y" type="double" value="1.000000"/>
+      </property>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="3840"/>
+        <property name="Y" type="int" value="180"/>
+      </property>
+    </property>
+    <property name="DP-2-3" type="string" value="Fujitsu Siemens Computers GmbH 24&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="3ac067f469266177b5b402de9b36f341716166c4"/>
+      <property name="Resolution" type="string" value="1920x1080"/>
+      <property name="RefreshRate" type="double" value="60.000000"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
       <property name="Scale" type="empty">
         <property name="X" type="double" value="1.000000"/>
         <property name="Y" type="double" value="1.000000"/>
@@ -56,14 +90,48 @@
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
-    <property name="HDMI-2" type="string" value="Dell Inc. 27&quot;">
+    <property name="HDMI-2" type="string" value="Hitachi Ltd 74&quot;">
       <property name="Active" type="bool" value="true"/>
-      <property name="EDID" type="string" value="8e85084eac2a6fde3e963b461d47fe6654a8eca3"/>
+      <property name="EDID" type="string" value="a43a7508431c69883628ce9ec2d8b3307c769e5e"/>
       <property name="Resolution" type="string" value="2560x1440"/>
       <property name="RefreshRate" type="double" value="59.950550"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
-      <property name="Primary" type="bool" value="true"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Scale" type="empty">
+        <property name="X" type="double" value="1.000000"/>
+        <property name="Y" type="double" value="1.000000"/>
+      </property>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="DP-1" type="string" value="Acer Technologies 20&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="83c46d528bd3ae63202b3a95940b788aae98da3d"/>
+      <property name="Resolution" type="string" value="1600x900"/>
+      <property name="RefreshRate" type="double" value="59.946021"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Scale" type="empty">
+        <property name="X" type="double" value="1.000000"/>
+        <property name="Y" type="double" value="1.000000"/>
+      </property>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="3840"/>
+        <property name="Y" type="int" value="180"/>
+      </property>
+    </property>
+    <property name="DP-2-3" type="string" value="Fujitsu Siemens Computers GmbH 24&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="3ac067f469266177b5b402de9b36f341716166c4"/>
+      <property name="Resolution" type="string" value="1920x1080"/>
+      <property name="RefreshRate" type="double" value="60.000000"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
       <property name="Scale" type="empty">
         <property name="X" type="double" value="1.000000"/>
         <property name="Y" type="double" value="1.000000"/>
