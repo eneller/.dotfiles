@@ -9,7 +9,6 @@
 
 # set modifier key, Mod4 is super (windows), Mod1 = Alt key
 set $mod Mod4 
-set $termEm kitty
 
 # power options
 set $shutdown shutdown -h now
@@ -69,6 +68,7 @@ bindsym $mod+Shift+p		resize shrink width 1 px or 1 ppt
 bindsym $mod+Shift+r		exec --no-startup-id winresize
 bindsym $mod+f			fullscreen toggle
 bindsym $mod+q [con_id="__focused__" instance="^(?!dropdown_).*$"] kill
+bindsym $mod+Shift+t      layout toggle tabbed tiling
 # bindsym $mod+o			split h;exec notify-send 'tile horizontally'
 # bindsym $mod+i			split v;exec notify-send 'tile vertically'
 
@@ -128,9 +128,10 @@ bindsym $mod+Shift+0	move container to workspace $ws10
 
 
 # KEYBOARD SHORTCUTS
-bindsym $mod+d			exec --no-startup-id dmenu_run
-bindsym $mod+Return 		exec --no-startup-id $termEm
+bindsym $mod+Return			exec --no-startup-id dmenu_run
+bindsym $mod+t 		exec --no-startup-id $TERMINAL
 bindsym $mod+w			exec --no-startup-id $BROWSER
+bindsym $mod+e    exec --no-startup-id $EXPLORER
 # Show selection:
 bindsym $mod+Insert		exec --no-startup-id showclip
 
