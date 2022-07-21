@@ -15,13 +15,23 @@ alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
 alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 alias code='code --extensions-dir "$XDG_DATA_HOME/vscode"'
 alias vscodium='vscodium --extensions-dir "$XDG_DATA_HOME/vscode"'
-
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export QT_AUTO_SCREEN_SCALE_FACTOR=0
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 
-
+# default applications
 export EDITOR=/usr/bin/nvim
 export BROWSER=/usr/bin/firefox
 export TERMINAL=/usr/bin/kitty
 export EXPLORER=/usr/bin/thunar
+export MAILCIENT=/usr/bin/neomutt
+
+# global theme
+export BLACK="#272822"
+export WHITE="#FFFFFF"
+export PINK="#F92672"
+export BLUE="#66D9EF"
+export GREEN="#A6E22E"
+export ORANGE="#FD971F"
+export YELLOW="#E6DB74"
+export PURPLE="#AE81FF"

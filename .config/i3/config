@@ -26,7 +26,7 @@ bar {
   strip_workspace_numbers yes
 
   colors {
-    background $black
+    background $BLACK
     statusline #F9FAF9
     separator  #454947
     focused_workspace  #F9FAF9 #16a085 #292F34
@@ -137,19 +137,10 @@ bindsym $mod+Insert		exec --no-startup-id showclip
 
 
 
-# COLORS
-set $black 	           #272822
-set $white             #FFFFFF
-set $pink              #F92672
-set $blue              #66D9EF
-set $green             #A6E22E
-set $orange            #FD971F
-set $yellow            #E6DB74
-set $purple            #AE81FF
 # class                 border  bg.    text    indicator child_border
-client.focused          $black  $black $green  $blue   $blue
-client.focused_inactive $black  $black $blue   $black  $black
-client.unfocused        $black  $black $white  $black  $black
+client.focused          $BLACK  $BLACK $GREEN  $BLUE   $BLUE
+client.focused_inactive $BLACK  $BLACK $BLUE   $BLACK  $BLACK
+client.unfocused        $BLACK  $BLACK $WHITE  $BLACK  $BLACK
 client.background		#f1232
 
 # EXTERNAL 
