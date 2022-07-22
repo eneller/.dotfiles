@@ -17,23 +17,24 @@ set $hibernate sudo -A systemctl suspend
 
 bar {
   i3bar_command i3bar
-  status_command i3status
+  status_command i3status --config $XDG_CONFIG_HOME/i3/i3status.conf
+  mode dock
   position top
   #tray_output primary
   font xft:Jetbrains mono 20
-  bindsym button4 nop
-  bindsym button5 nop
   strip_workspace_numbers yes
+  workspace_buttons yes
 
   colors {
     background $BLACK
     statusline #F9FAF9
     separator  #454947
-    focused_workspace  #F9FAF9 #16a085 #292F34
-    active_workspace   #595B5B #353836 #FDF6E3
-    inactive_workspace #595B5B #222D31 #EEE8D5
+    #                   border  bg      text
+    focused_workspace  $BLUE $BLue $BLACK
+    active_workspace   $WHITE $BLACK $WHITE
+    inactive_workspace $WHITE $BLACK $WHITE
     binding_mode       #16a085 #2C2C2C #F9FAF9
-    urgent_workspace   #16a085 #FDF6E3 #E5201D
+    urgent_workspace   $RED $BLACK $RED
   }
 }
 
@@ -141,7 +142,7 @@ bindsym $mod+Insert		exec --no-startup-id showclip
 client.focused          $BLACK  $BLACK $GREEN  $BLUE   $BLUE
 client.focused_inactive $BLACK  $BLACK $BLUE   $BLACK  $BLACK
 client.unfocused        $BLACK  $BLACK $WHITE  $BLACK  $BLACK
-client.background		#f1232
+client.background		    $BLACK
 
 # EXTERNAL 
 # set background picture
