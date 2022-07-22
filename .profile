@@ -24,7 +24,7 @@ export EDITOR=/usr/bin/nvim
 export BROWSER=/usr/bin/firefox
 export TERMINAL=/usr/bin/kitty
 export EXPLORER=/usr/bin/thunar
-export MAILCIENT=/usr/bin/neomutt
+export MAILCLIENT=/usr/bin/neomutt
 export LAUNCHER=dmenu_run
 
 # global theme
