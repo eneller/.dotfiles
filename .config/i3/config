@@ -128,11 +128,12 @@ bindsym $mod+0		workspace $ws10
 bindsym $mod+Shift+0	move container to workspace $ws10
 
 
-# KEYBOARD SHORTCUTS
+# APPLICATION SHORTCUTS
 bindsym $mod+Return			exec --no-startup-id $LAUNCHER
 bindsym $mod+t 		exec --no-startup-id $TERMINAL
 bindsym $mod+w			exec --no-startup-id $BROWSER
 bindsym $mod+e    exec --no-startup-id $EXPLORER
+bindsym $mod+m    exec --no-startup-id $MAILCLIENT
 # Show selection:
 bindsym $mod+Insert		exec --no-startup-id showclip
 
@@ -147,7 +148,6 @@ client.background		    $BLACK
 # EXTERNAL 
 # set background picture
 exec --no-startup-id nitrogen --set-zoom-fill $HOME/.config/i3/bg.png 
-# start xfce bar
 # try to start tray tools / applets manually
 exec --no-startup-id nm-applet --sm-disable
 exec --no-startup-id blueman-applet
