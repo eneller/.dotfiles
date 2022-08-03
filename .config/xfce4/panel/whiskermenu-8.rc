@@ -1,5 +1,5 @@
 favorites=xfce4-terminal-emulator.desktop,xfce4-file-manager.desktop,xfce4-web-browser.desktop,xfce4-mail-reader.desktop
-recent=telegramdesktop.desktop,vlc.desktop,jetbrains-idea.desktop,xfce-display-settings.desktop,org.manjaro.pamac.manager.desktop,thunar.desktop,joplin.desktop,bitwarden.desktop,discord.desktop,teamspeak3.desktop
+recent=org.manjaro.pamac.manager.desktop,telegramdesktop.desktop,thunar.desktop,bitwarden.desktop,xfce-display-settings.desktop,joplin.desktop,jetbrains-idea.desktop,vlc.desktop,discord.desktop,teamspeak3.desktop
 button-icon=/usr/share/icons/whiskermenu-manjaro.svg
 button-single-row=false
 show-button-title=false

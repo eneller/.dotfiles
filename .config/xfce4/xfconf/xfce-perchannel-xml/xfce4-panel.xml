@@ -50,6 +50,8 @@
       </property>
       <property name="show-frame" type="bool" value="false"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (54%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (53%)"/>
         <value type="string" value="wi-fi network connection “eduroam” active: eduroam (61%)"/>
         <value type="string" value="wi-fi network connection “eduroam” active: eduroam (58%)"/>
         <value type="string" value="wi-fi network connection “jojo” active: jojo (61%)"/>
@@ -80,20 +82,22 @@
       </property>
       <property name="hide-new-items" type="bool" value="true"/>
       <property name="hidden-legacy-items" type="array">
-        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (61%)"/>
-        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (69%)"/>
-        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (72%)"/>
-        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (67%)"/>
-        <value type="string" value="no network connection"/>
-        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (58%)"/>
         <value type="string" value="wi-fi network connection “eduroam” active: eduroam (65%)"/>
-        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (63%)"/>
-        <value type="string" value="wi-fi network connection “jojo” active: jojo (51%)"/>
-        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (68%)"/>
-        <value type="string" value="wi-fi network connection “jojo” active: jojo (61%)"/>
         <value type="string" value="wi-fi network connection “jojo” active: jojo (56%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (63%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (68%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (53%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (61%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (58%)"/>
+        <value type="string" value="no network connection"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (72%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (69%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (54%)"/>
         <value type="string" value="wi-fi network connection “eduroam” active: eduroam (62%)"/>
         <value type="string" value="wi-fi network connection “eduroam” active: eduroam (59%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (67%)"/>
+        <value type="string" value="wi-fi network connection “jojo” active: jojo (51%)"/>
+        <value type="string" value="wi-fi network connection “jojo” active: jojo (61%)"/>
       </property>
       <property name="single-row" type="bool" value="false"/>
       <property name="symbolic-icons" type="bool" value="false"/>
@@ -110,7 +114,7 @@
     </property>
     <property name="plugin-9" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="firefox.instance1205;firefox.instance1213;firefox.instance1233;firefox.instance1304;firefox.instance1314;firefox.instance1618;firefox.instance1640;firefox.instance2190;vlc"/>
+      <property name="mpris-players" type="string" value="firefox.instance1205;firefox.instance1213;firefox.instance1221;firefox.instance1233;firefox.instance1249;firefox.instance1304;firefox.instance1314;firefox.instance1618;firefox.instance1640;firefox.instance2190;vlc"/>
     </property>
     <property name="plugin-8" type="string" value="whiskermenu"/>
     <property name="plugin-5" type="string" value="clock"/>
