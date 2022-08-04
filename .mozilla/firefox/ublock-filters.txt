@@ -1,0 +1,207 @@
+! 2020-10-19 https://www.youtube.com
+www.youtube.com###dialog
+||www.gstatic.com/youtube/img/promos/growth/dmod_si_horizontal_ver1_240x400.png$image
+www.youtube.com##.opened
+www.youtube.com##ytd-guide-signin-promo-renderer.ytd-guide-renderer.style-scope
+! 2021-01-25 https://www.youtube.com
+www.youtube.com###guide-links-primary
+www.youtube.com###copyright
+
+
+! 2020-10-25 https://www.instagram.com
+www.instagram.com##.piCib
+www.instagram.com##.Yx5HN.RnEpo
+
+! 2021-06-16 https://open.spotify.com
+open.spotify.com##._5c12c73a4f38b98340ea33803209fdc8-scss._4dfd6d092d9e182093e453606400f1cc-scss > ._47872eede19af06725157ba21fea3516-scss.link-subtle
+! 2021-06-23 https://open.spotify.com
+open.spotify.com##._186766435454b6e18fec29440fbb9fc4-scss._110dbc41d89af63f97cdd8b7cd7fea47-scss._3f37264be67c8f40fa9f76449afdb4bd-scss
+open.spotify.com##.active.b31034fcce422440a4a86c71944b08b6-scss.logo
+! 2022-02-17 https://open.spotify.com
+open.spotify.com##.Upqw01TOXETOmR5Td7Dj.X7lQWw2Ly_RZVPEFj2QY.Qt5xfSWikz6CLU8Vobxs
+open.spotify.com##.WvLkmOVB2R2vzI2ibR_r.eNs6P3JYpf2LScgTDHc6 > .ATUzFKub89lzvkmvhpyE.link-subtle
+! 2022-04-17 https://open.spotify.com
+open.spotify.com##.GenericModal--afterOpen.GenericModal--animated.encore-dark-theme.GenericModal > div > iframe
+open.spotify.com##.GenericModal__overlay--afterOpen.GenericModal__overlay--animated.GenericModal__overlay
+
+! 2021-01-25 https://ticktick.com
+ticktick.com##a.upgrade-button:nth-of-type(2)
+! 2021-01-27 https://ticktick.com
+ticktick.com##.empty-detail-view
+ticktick.com##.fill-theme.icon-empty-task-detail-pointer > use
+ticktick.com##.fill-theme.icon-empty-task-detail-pointer
+ticktick.com##.empty-task-detail.icon-empty-task-detail > use
+ticktick.com##.empty-task-detail.icon-empty-task-detail
+ticktick.com##a.upgrade-button:nth-of-type(2)
+! 2021-10-10 https://ticktick.com
+ticktick.com##.hover\:opacity-60.opacity-40.text-white-default.h-full.w-full.icon-calendar-sidebar > use
+ticktick.com##.hover\:opacity-60.opacity-40.text-white-default.h-full.w-full.icon-calendar-sidebar
+ticktick.com##.calendarIcon_3y13p.relative.h-\[24px\].w-\[24px\].block
+
+! 2021-01-28 https://web.whatsapp.com
+||web.whatsapp.com/img/intro-connection-dark_0ee01153183b5ebd9b296399cc2104b0.jpg$image
+web.whatsapp.com##._3BDr5
+web.whatsapp.com##._2cf_o
+! 2021-03-03 https://web.whatsapp.com
+web.whatsapp.com##.WG7wG
+web.whatsapp.com##._2zkCi
+
+! 2021-01-25 https://calendar.google.com
+calendar.google.com##.erDb5d
+
+! 2020-11-19 https://www.gutefrage.net
+||www.welect.de/passage/for_product/UtZA3wHEtDiMpOQSgvHUYu9WoNfG/pre_offer?consent_id=ba9511b1-5c12-45ac-a124-eaa99cce3fde&utm_campaign=gutefrage&utm_source=www.gutefrage.net$subdocument
+www.gutefrage.net###wl-container
+||xtag.cdn-solution.net/creatives/hb/SOD20_1263/desktop/desktop2/top/index.html?sasfid=8266_2&dspx_clicktag=https%3A%2F%2Ftracking.dspx.tv%2F%3Ftc%3Ddspx%26mts%3D0%26t_aid%3D8263%26t_oid%3D2886%26t_pid%3D1230%26inventory_key%3D17%26t_host%3D%26t_path%3D%26t_dealid%3D%26dvt%3Ddesktop%26_e%3Dclick%26idt%3D100%26target%3D&&dspx_hdlrandom=644%20&dspx_encodelevel=0&dspx_clicktag_p=https%3A%2F%2Fad.doubleclick.net%2Fddm%2Ftrackclk%2FN3722.3147598SODSCREENONDEMANDGM%2FB24927399.287808321%3Bdc_trk_aid%3D481305502%3Bdc_trk_cid%3D116094629%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bgdpr%3D%24%7BGDPR%7D%3Bgdpr_consent%3D%24%7BGDPR_CONSENT_755%7D&dspx_debug=1&&dspxct=$subdocument
+www.gutefrage.net##.HasRichTooltip--bottom.HasRichTooltip--rightmost.QdpMeta-tooltip.HasRichTooltip--clickOnly.HasRichTooltip
+||xtag.cdn-solution.net/creatives/hb/SOD20_1263/desktop/desktop2/left/index.html?sasfid=8266_1&dspx_clicktag=https%3A%2F%2Ftracking.dspx.tv%2F%3Ftc%3Ddspx%26mts%3D0%26t_aid%3D8262%26t_oid%3D2886%26t_pid%3D1230%26inventory_key%3D17%26t_host%3D%26t_path%3D%26t_dealid%3D%26dvt%3Ddesktop%26_e%3Dclick%26idt%3D100%26target%3D&&dspx_hdlrandom=644%20&dspx_encodelevel=0&dspx_clicktag_p=https%3A%2F%2Fad.doubleclick.net%2Fddm%2Ftrackclk%2FN3722.3147598SODSCREENONDEMANDGM%2FB24927399.287808321%3Bdc_trk_aid%3D481305502%3Bdc_trk_cid%3D116094629%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bgdpr%3D%24%7BGDPR%7D%3Bgdpr_consent%3D%24%7BGDPR_CONSENT_755%7D&dspx_debug=1&&dspxct=$subdocument
+||xtag.cdn-solution.net/creatives/hb/SOD20_1263/desktop/desktop1/right/index.html?sasfid=8276_3&dspx_clicktag=https%3A%2F%2Ftracking.dspx.tv%2F%3Ftc%3Ddspx%26mts%3D0%26t_aid%3D8274%26t_oid%3D2888%26t_pid%3D1230%26inventory_key%3D17%26t_host%3D%26t_path%3D%26t_dealid%3D%26dvt%3Ddesktop%26_e%3Dclick%26idt%3D100%26target%3D&&dspx_hdlrandom=224%20&dspx_encodelevel=0&dspx_clicktag_p=https%3A%2F%2Fad.doubleclick.net%2Fddm%2Ftrackclk%2FN3722.3147598SODSCREENONDEMANDGM%2FB24927399.287808321%3Bdc_trk_aid%3D481305502%3Bdc_trk_cid%3D116094629%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bgdpr%3D%24%7BGDPR%7D%3Bgdpr_consent%3D%24%7BGDPR_CONSENT_755%7D&dspx_debug=1&&dspxct=$subdocument
+||xtag.cdn-solution.net/creatives/hb/SOD20_1263/desktop/desktop1/top/index.html?sasfid=8276_2&dspx_clicktag=https%3A%2F%2Ftracking.dspx.tv%2F%3Ftc%3Ddspx%26mts%3D0%26t_aid%3D8273%26t_oid%3D2888%26t_pid%3D1230%26inventory_key%3D17%26t_host%3D%26t_path%3D%26t_dealid%3D%26dvt%3Ddesktop%26_e%3Dclick%26idt%3D100%26target%3D&&dspx_hdlrandom=224%20&dspx_encodelevel=0&dspx_clicktag_p=https%3A%2F%2Fad.doubleclick.net%2Fddm%2Ftrackclk%2FN3722.3147598SODSCREENONDEMANDGM%2FB24927399.287808321%3Bdc_trk_aid%3D481305502%3Bdc_trk_cid%3D116094629%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bgdpr%3D%24%7BGDPR%7D%3Bgdpr_consent%3D%24%7BGDPR_CONSENT_755%7D&dspx_debug=1&&dspxct=$subdocument
+||xtag.cdn-solution.net/creatives/hb/SOD20_1263/desktop/desktop1/left/index.html?sasfid=8276_1&dspx_clicktag=https%3A%2F%2Ftracking.dspx.tv%2F%3Ftc%3Ddspx%26mts%3D0%26t_aid%3D8272%26t_oid%3D2888%26t_pid%3D1230%26inventory_key%3D17%26t_host%3D%26t_path%3D%26t_dealid%3D%26dvt%3Ddesktop%26_e%3Dclick%26idt%3D100%26target%3D&&dspx_hdlrandom=224%20&dspx_encodelevel=0&dspx_clicktag_p=https%3A%2F%2Fad.doubleclick.net%2Fddm%2Ftrackclk%2FN3722.3147598SODSCREENONDEMANDGM%2FB24927399.287808321%3Bdc_trk_aid%3D481305502%3Bdc_trk_cid%3D116094629%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bgdpr%3D%24%7BGDPR%7D%3Bgdpr_consent%3D%24%7BGDPR_CONSENT_755%7D&dspx_debug=1&&dspxct=$subdocument
+
+! 2020-12-20 https://www.finanzfrage.net
+||www.welect.de/passage/pre_offer/7f214928-9347-45ee-9c41-222ce9b7d12b?utm_campaign=gutefrage&utm_source=www.finanzfrage.net$subdocument
+www.finanzfrage.net###wl-container
+||xtag.cdn-solution.net/creatives/hb/SOD20_1464/Liebespaar/desktop/left/index.html?sasfid=9086_1&dspx_clicktag=https%3A%2F%2Ftracking.dspx.tv%2F%3Ftc%3Ddspx%26mts%3D0%26t_aid%3D8681%26t_oid%3D3020%26t_pid%3D723%26inventory_key%3D17%26t_host%3D%26t_path%3D%26t_dealid%3D%26dvt%3Ddesktop%26_e%3Dclick%26idt%3D100%26target%3D&&dspx_hdlrandom=330%20&dspx_encodelevel=0&dspx_clicktag_p=https%3A%2F%2Fserver.adform.net%2FC%2F%3Fbn%3D42225507%3Bgdpr%3D%24%7BGDPR%7D%3Bgdpr_consent%3D%24%7BGDPR_CONSENT_50%7D&dspx_debug=1&&dspxct=$subdocument
+||xtag.cdn-solution.net/creatives/hb/SOD20_1464/Liebespaar/desktop/right/index.html?sasfid=9086_3&dspx_clicktag=https%3A%2F%2Ftracking.dspx.tv%2F%3Ftc%3Ddspx%26mts%3D0%26t_aid%3D8683%26t_oid%3D3020%26t_pid%3D723%26inventory_key%3D17%26t_host%3D%26t_path%3D%26t_dealid%3D%26dvt%3Ddesktop%26_e%3Dclick%26idt%3D100%26target%3D&&dspx_hdlrandom=330%20&dspx_encodelevel=0&dspx_clicktag_p=https%3A%2F%2Fserver.adform.net%2FC%2F%3Fbn%3D42225507%3Bgdpr%3D%24%7BGDPR%7D%3Bgdpr_consent%3D%24%7BGDPR_CONSENT_50%7D&dspx_debug=1&&dspxct=$subdocument
+||xtag.cdn-solution.net/creatives/hb/SOD20_1464/Liebespaar/desktop/top/index.html?sasfid=9086_2&dspx_clicktag=https%3A%2F%2Ftracking.dspx.tv%2F%3Ftc%3Ddspx%26mts%3D0%26t_aid%3D8682%26t_oid%3D3020%26t_pid%3D723%26inventory_key%3D17%26t_host%3D%26t_path%3D%26t_dealid%3D%26dvt%3Ddesktop%26_e%3Dclick%26idt%3D100%26target%3D&&dspx_hdlrandom=330%20&dspx_encodelevel=0&dspx_clicktag_p=https%3A%2F%2Fserver.adform.net%2FC%2F%3Fbn%3D42225507%3Bgdpr%3D%24%7BGDPR%7D%3Bgdpr_consent%3D%24%7BGDPR_CONSENT_50%7D&dspx_debug=1&&dspxct=$subdocument
+
+! 2021-01-10 https://www.wg-gesucht.de
+www.wg-gesucht.de##.noprint.airbnb_ad.wgg_card.clicked_partner > .row > .card_body.col-sm-8
+
+! 2021-01-18 https://www.zeit.de
+www.zeit.de##.paywall-footer__panel
+www.zeit.de##.paywall-footer__header
+
+
+
+
+
+
+! 2021-01-25 https://moodle.uni-ulm.de
+moodle.uni-ulm.de###loginbackgroundimagetext
+
+! 2021-01-25 https://www.reddit.com
+www.reddit.com##.jEUbSHJJx8vISKpWirlfx
+
+
+
+
+
+! 2021-01-30 https://binutils.sourceware.narkive.com
+binutils.sourceware.narkive.com##.pbs-cta-fullscreen.pbs-cta
+binutils.sourceware.narkive.com###exp_fda2d41f-9515-4373-84dc-4bfe478fe380
+
+! 2021-02-01 https://www.gut-erklaert.de
+www.gut-erklaert.de##.contentBody > div:nth-of-type(1) > .contentlabel
+www.gut-erklaert.de##div:nth-of-type(3) > .contentlabel
+www.gut-erklaert.de##.contentBody > span.contentlabel:nth-of-type(1)
+
+! 2021-02-04 https://www.youtube.com
+www.youtube.com###logo-icon
+
+
+
+! 2021-03-09 https://studyflix.de
+studyflix.de##.-enabled.up-can-clean.huge-notification
+
+
+! 2021-03-26 https://www.sofatutor.com
+www.sofatutor.com##.trial-flow-popup__content
+www.sofatutor.com##.bg-black-transparent.trial-flow__overlay
+www.sofatutor.com##.trial-flow-popup__yeti
+
+! 2021-04-01 https://www.kapiert.de
+www.kapiert.de###popup-testen
+www.kapiert.de###overlay-testen
+
+! 2021-04-25 https://pimylifeup.com
+pimylifeup.com##.jw-reset.jw-video
+pimylifeup.com##.adthrive-video-title.adthrive-video-text-cutoff
+pimylifeup.com##.adthrive-wrapper-bar
+pimylifeup.com##.jw-reset.jw-media
+pimylifeup.com##.jw-reset.jw-wrapper > .jw-reset.jw-aspect
+pimylifeup.com##.jw-reset.jw-wrapper
+
+
+
+! 2021-05-25 https://www.technicpack.net
+www.technicpack.net##._5kE-6aUK._9r0K-Oum
+www.technicpack.net##.aJVLc6uP
+www.technicpack.net##.fEy1Z2XT
+
+! 2021-05-25 https://hexxit.fandom.com
+hexxit.fandom.com##p:nth-of-type(2)
+
+
+! 2021-06-17 https://regexr.com
+regexr.com##.noad
+
+
+
+! 2021-07-06 https://pl.allsportsflix.best
+pl.allsportsflix.best###playerCta-wrapper
+
+! 2021-07-06 https://streaming-builder.com
+streaming-builder.com##.p-3.form-container.bg-white.col-lg-12.col-md-12.col-sm-12.col-12
+streaming-builder.com##.overlay
+streaming-builder.com##.popup
+
+! 2021-08-05 https://videovak.com
+videovak.com##iframe:nth-of-type(4)
+videovak.com##.stick-center.left.takipte_kal iframe
+videovak.com##.left.takipte_kal iframe
+videovak.com##iframe:nth-of-type(2)
+videovak.com###AdskeeperComposite1057813_0c0d9 > div > .mgbox
+videovak.com##iframe:nth-of-type(3)
+
+gmx.net##+js(nobab)
+! 2021-05-13 https://ticktick.com
+
+
+! 2021-10-19 https://www.kuechengoetter.de
+www.kuechengoetter.de##.bplr-touch-overlay
+www.kuechengoetter.de###BPLR-1j0z5e4nlnt1_adContainer
+www.kuechengoetter.de###BPLR-1j0z5e4nlnt1_html5
+www.kuechengoetter.de##.bplr-holder
+www.kuechengoetter.de##.bplr-paused.bplr-over.bplr-visible-controls.bplr-large.bplr-started.bplr-default-skin.bplr
+www.kuechengoetter.de###BPLR-1j0z5e4nlnt1 > [src="//cdn.target-video.com/live/partners/14216/snapshot/456814.png"]
+www.kuechengoetter.de##.bplr-smallest.bplr-smaller.bplr-small.bplr-paused.bplr-over.bplr-visible-controls.bplr-started.bplr-default-skin.bplr
+
+! 2021-11-06 https://www.overleaf.com
+www.overleaf.com##.col-md-9
+www.overleaf.com##.hidden-print.site-footer-content > .row
+www.overleaf.com##.site-footer
+
+! 2021-12-29 https://refactoring.guru
+refactoring.guru##.announcement-block-inner
+
+! 2022-01-19 https://www.gmx.net
+||dl.gmx.net/uim/connector/live/v2/nonfriendlyiframe.html$subdocument
+||dl.gmx.net/uim/connector/live/v2/nonfriendlyiframe.html$subdocument
+||img.ui-portal.de/homepage/img/gmx/lotto/2021/06/jackpot_45.png$image
+
+! 2022-02-11 https://cloud.oracle.com
+cloud.oracle.com##.inner-focus-dark.action.oci-banner
+! 2022-03-03 https://cloud.oracle.com
+cloud.oracle.com##.inner-focus-dark.info.oci-banner
+
+
+
+
+
+! 2022-03-03 http://web.neller.org
+web.neller.org##div.col:nth-of-type(1)
+
+! 2022-03-04 https://www.babypips.com
+www.babypips.com###stickybar
+
+! 2022-03-05 https://de.aliexpress.com
+de.aliexpress.com##.global-gdpr-container
+
+! 2022-03-20 https://w2g.tv
+w2g.tv##.w2g-top-message-small
+
+! 2022-04-13 https://s.to
+s.to##iframe:nth-of-type(3)
+
