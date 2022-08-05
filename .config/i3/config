@@ -9,19 +9,22 @@
 
 # set modifier key, Mod4 is super (windows), Mod1 = Alt key
 set $mod Mod4 
+bindsym $mod+F12  restart;reload
 
 # power options
 set $shutdown shutdown -h now
 set $reboot reboot
 set $hibernate sudo -A systemctl suspend
 
+font pango:Sans Regular 12
 bar {
   i3bar_command i3bar
-  status_command i3status --config $XDG_CONFIG_HOME/i3/i3status.conf
+  status_command i3status 
+#--config $XDG_CONFIG_HOME/i3/i3status.conf
   mode dock
   position top
   #tray_output primary
-  font xft:Jetbrains mono 20
+#  font xft:Jetbrains mono 20
   strip_workspace_numbers yes
   workspace_buttons yes
 
@@ -30,7 +33,7 @@ bar {
     statusline #F9FAF9
     separator  #454947
     #                   border  bg      text
-    focused_workspace  $BLUE $BLue $BLACK
+    focused_workspace  $BLUE $BLUE $BLACK
     active_workspace   $WHITE $BLACK $WHITE
     inactive_workspace $WHITE $BLACK $WHITE
     binding_mode       #16a085 #2C2C2C #F9FAF9
@@ -149,6 +152,9 @@ client.background		    $BLACK
 # set background picture
 exec --no-startup-id nitrogen --set-zoom-fill $HOME/.config/i3/bg.png 
 # try to start tray tools / applets manually
-exec --no-startup-id nm-applet --sm-disable
+exec --no-startup-id nm-applet 
+# --sm-disable
 exec --no-startup-id blueman-applet
+exec --no-startup-id pamac-tray
+exec --no-startup-id xfce4-power-manager
 
