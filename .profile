@@ -1,3 +1,5 @@
+# Basic config
+xset r rate 200 35 # set key repeat delay and rate
 # Clean Up Home Directory
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
@@ -32,7 +34,7 @@ export QT_AUTO_SCREEN_SCALE_FACTOR=0
 # global theme colors
 export BLACK="#272822"
 export WHITE="#FFFFFF"
-export PINK="#F92672"
+export RED="#F92672"
 export BLUE="#66D9EF"
 export GREEN="#A6E22E"
 export ORANGE="#FD971F"
