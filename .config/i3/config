@@ -29,15 +29,15 @@ bar {
   workspace_buttons yes
 
   colors {
-    background $BLACK
-    statusline #F9FAF9
-    separator  #454947
+    background #000000
+    #statusline #F9FAF9
+    #separator  #454947
     #                   border  bg      text
-    focused_workspace  $BLUE $BLUE $BLACK
-    active_workspace   $WHITE $BLACK $WHITE
-    inactive_workspace $WHITE $BLACK $WHITE
-    binding_mode       #16a085 #2C2C2C #F9FAF9
-    urgent_workspace   $RED $BLACK $RED
+    #focused_workspace  '#66D9EF' '#66D9EF' '#272822'
+    #active_workspace   #FFFFFF #272822 #FFFFFF
+    #inactive_workspace #FFFFFF #272822 #FFFFFF
+    #binding_mode       #16a085 #2C2C2C #F9FAF9
+    #urgent_workspace   #F92672 #272822 #F92672
   }
 }
 
@@ -52,7 +52,7 @@ for_window [instance="dropdown_*"] sticky enable
 for_window [instance="dropdown_tmux"] resize set 625 450
 for_window [instance="dropdown_tmux"] border pixel 3
 # start scratchpads
-exec --no-startup-id bitwarden-desktop
+# exec --no-startup-id bitwarden-desktop
 for_window [class="bitwarden"] move scratchpad
 
 
@@ -143,12 +143,15 @@ bindsym $mod+Insert		exec --no-startup-id showclip
 
 
 # class                 border  bg.    text    indicator child_border
-client.focused          $BLACK  $BLACK $GREEN  $BLUE   $BLUE
-client.focused_inactive $BLACK  $BLACK $BLUE   $BLACK  $BLACK
-client.unfocused        $BLACK  $BLACK $WHITE  $BLACK  $BLACK
-client.background		    $BLACK
+client.focused          #272822  #272822 #A6E22E  #66D9EF   #66D9EF
+client.focused_inactive #272822  #272822 #66D9EF   #272822  #272822
+client.unfocused        #272822  #272822 #FFFFFF  #272822  #272822
+client.background		    #272822
 
-# EXTERNAL 
+# AUTOSTART
+# start polkit for pacman
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 
+# DESKTOP STUFF
 # set background picture
 exec --no-startup-id nitrogen --set-zoom-fill $HOME/.config/i3/bg.png 
 # try to start tray tools / applets manually
