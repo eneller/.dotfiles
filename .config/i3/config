@@ -154,10 +154,12 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # DESKTOP STUFF
 # set background picture
 exec --no-startup-id nitrogen --set-zoom-fill $HOME/.config/i3/bg.png 
+
 # try to start tray tools / applets manually
 exec --no-startup-id nm-applet 
 # --sm-disable
 exec --no-startup-id blueman-applet
 exec --no-startup-id pamac-tray
 exec --no-startup-id xfce4-power-manager
+exec --no-startup-id volumeicon
 

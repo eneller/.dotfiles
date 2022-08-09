@@ -22,7 +22,7 @@ export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc-2.0"
 # default applications
 export EDITOR=/usr/bin/nvim
 export BROWSER=/usr/bin/firefox
-export TERMINAL=/usr/bin/kitty
+export TERMINAL=/usr/bin/alacritty
 export EXPLORER=/usr/bin/thunar
 export MAILCLIENT=/usr/bin/neomutt
 export LAUNCHER=dmenu_run
