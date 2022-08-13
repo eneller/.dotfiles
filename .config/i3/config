@@ -10,6 +10,15 @@
 # set modifier key, Mod4 is super (windows), Mod1 = Alt key
 set $mod Mod4 
 bindsym $mod+F12  restart;reload
+# THEME, should use same colors as .profile
+set $black #272822
+set $white #FFFFFF
+set $red #F92672
+set $blue #66D9EF
+set $green #A6E22E
+set $orange #FD971F
+set $YELLOW #E6DB74
+set $purple #AE81FF
 
 # power options
 set $shutdown shutdown -h now
@@ -33,11 +42,11 @@ bar {
     #statusline #F9FAF9
     #separator  #454947
     #                   border  bg      text
-    #focused_workspace  '#66D9EF' '#66D9EF' '#272822'
-    #active_workspace   #FFFFFF #272822 #FFFFFF
-    #inactive_workspace #FFFFFF #272822 #FFFFFF
+    #focused_workspace  '#66D9EF' '#66D9EF' '$black'
+    #active_workspace   #FFFFFF $black #FFFFFF
+    #inactive_workspace #FFFFFF $black #FFFFFF
     #binding_mode       #16a085 #2C2C2C #F9FAF9
-    #urgent_workspace   #F92672 #272822 #F92672
+    #urgent_workspace   #F92672 $black #F92672
   }
 }
 
@@ -72,9 +81,9 @@ bindsym $mod+Shift+p		resize shrink width 1 px or 1 ppt
 bindsym $mod+Shift+r		exec --no-startup-id winresize
 bindsym $mod+f			fullscreen toggle
 bindsym $mod+q [con_id="__focused__" instance="^(?!dropdown_).*$"] kill
-bindsym $mod+Shift+t      layout toggle tabbed tiling
-# bindsym $mod+o			split h;exec notify-send 'tile horizontally'
-# bindsym $mod+i			split v;exec notify-send 'tile vertically'
+bindsym $mod+Shift+t      layout toggle tabbed splith
+bindsym $mod+Shift+v			split h;exec notify-send 'tile horizontally'
+bindsym $mod+v			split v;exec notify-send 'tile vertically'
 
 # No focus on mouse over (allows scrolling without changing focus)
 focus_follows_mouse no
@@ -83,10 +92,10 @@ default_border pixel 1
 default_floating_border pixel 1
 
 # ARROW KEYS
-bindsym $mod+Ctrl+Left		move workspace to output left
-bindsym $mod+Ctrl+Down		move workspace to output down
-bindsym $mod+Ctrl+Up		move workspace to output up
-bindsym $mod+Ctrl+Right		move workspace to output right
+bindsym $mod+Left		move workspace to output left
+bindsym $mod+Down		move workspace to output down
+bindsym $mod+Up		move workspace to output up
+bindsym $mod+Right		move workspace to output right
 
 # WORKSPACES
 # prior and next ar PgUp and PgDown
@@ -138,15 +147,15 @@ bindsym $mod+w			exec --no-startup-id $BROWSER
 bindsym $mod+e    exec --no-startup-id $EXPLORER
 bindsym $mod+m    exec --no-startup-id $MAILCLIENT
 # Show selection:
-bindsym $mod+Insert		exec --no-startup-id showclip
+#bindsym $mod+Insert		exec --no-startup-id showclip
 
 
 
 # class                 border  bg.    text    indicator child_border
-client.focused          #272822  #272822 #A6E22E  #66D9EF   #66D9EF
-client.focused_inactive #272822  #272822 #66D9EF   #272822  #272822
-client.unfocused        #272822  #272822 #FFFFFF  #272822  #272822
-client.background		    #272822
+client.focused          $blue  $black $blue   $blue   $blue
+client.focused_inactive $black  $black $blue   $black  $black
+client.unfocused        $black  $black $white  $black  $black
+client.background		    $black
 
 # AUTOSTART
 # start polkit for pacman
