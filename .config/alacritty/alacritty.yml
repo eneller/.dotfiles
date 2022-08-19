@@ -5,6 +5,7 @@ window:
     x: 5
     y: 7
   opacity: 1.0
+  dynamic_title: true
 #font:
 colors:
   # Default colors

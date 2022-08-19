@@ -17,8 +17,10 @@ set $red #F92672
 set $blue #66D9EF
 set $green #A6E22E
 set $orange #FD971F
-set $YELLOW #E6DB74
+set $yellow #E6DB74
 set $purple #AE81FF
+
+set $allblack #000000
 
 # power options
 set $shutdown shutdown -h now
@@ -42,11 +44,11 @@ bar {
     #statusline #F9FAF9
     #separator  #454947
     #                   border  bg      text
-    #focused_workspace  '#66D9EF' '#66D9EF' '$black'
+    focused_workspace  $allblack $blue $allblack
     #active_workspace   #FFFFFF $black #FFFFFF
     #inactive_workspace #FFFFFF $black #FFFFFF
     #binding_mode       #16a085 #2C2C2C #F9FAF9
-    #urgent_workspace   #F92672 $black #F92672
+    urgent_workspace   $red $black $red
   }
 }
 

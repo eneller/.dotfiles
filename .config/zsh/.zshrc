@@ -57,22 +57,7 @@ WORDCHARS=${WORDCHARS//\/[&.;]}                                 					# Don't con
 
 
 
-#ALIAS SECTION
-
-alias ls='ls -hN --group-directories-first --color=auto'											# make output more readable and show directories first
-alias grep='grep --color=auto'														# colorize grep output, set GREP_COLORS
-alias cp="cp -i"                                                					# Confirm before overwriting something
-alias df='df -h'                                                					# Human-readable sizes
-alias free='free -m'
-alias vi='nvim'                                            					# Show sizes in MB
-alias ll='ls -l'
-alias la='ls --almost-all'
-alias r='R'
-# Add an "alert" alias for long running commands.  Use like so: 'sleep 10; alert'
-alias notify='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-#Add a "dotfiles" alias for .dotfile git repo
-alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-#alias 'dotfiles-update'='dotfiles commit -a && dotfiles push'
+source $XDG_CONFIG_HOME/shell/alias.sh
 
 
 #KEYBINDINGS SECTION (use 'cat -v' or 'od -c' to see raw keyboard output)
@@ -107,7 +92,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 	#ZSH_HIGHLIGHT_STYLES[builtin]=fg=white,bold
 	#ZSH_HIGHLIGHT_STYLES[function]=fg=white,bold
 	#ZSH_HIGHLIGHT_STYLES[command]=fg=white,bold
-	ZSH_HIGHLIGHT_STYLES[precommand]=fg=#eaff00,bold
+	#ZSH_HIGHLIGHT_STYLES[precommand]=fg=#eaff00,bold
 	#ZSH_HIGHLIGHT_STYLES[commandseparator]=none
 	#ZSH_HIGHLIGHT_STYLES[hashed-command]=fg=009
 	#ZSH_HIGHLIGHT_STYLES[path]=fg=214,underline
