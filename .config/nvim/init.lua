@@ -5,7 +5,7 @@ vim.o.termguicolors = true
 vim.cmd('colorscheme monokai') -- set colorscheme
 vim.o.syntax = 'on'
 vim.cmd('set title')
-vim.opt.titlestring = [[%f %h%m%r%w ]]
+vim.opt.titlestring = [[%{v:progname}: %f %h%m%r%w ]]
 -- vim.opt.titlestring = [[%f %h%m%r%w %{v:progname} (%{tabpagenr()} of %{tabpagenr('$')})]]
 vim.o.errorbells = false
 vim.o.smartcase = true

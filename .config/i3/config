@@ -84,8 +84,8 @@ bindsym $mod+Shift+r		exec --no-startup-id winresize
 bindsym $mod+f			fullscreen toggle
 bindsym $mod+q [con_id="__focused__" instance="^(?!dropdown_).*$"] kill
 bindsym $mod+Shift+t      layout toggle tabbed splith
-bindsym $mod+Shift+v			split h;exec notify-send 'tile horizontally'
-bindsym $mod+v			split v;exec notify-send 'tile vertically'
+bindsym $mod+Shift+v			split h;exec notify-send 'tile horizontally |'
+bindsym $mod+v			split v;exec notify-send 'tile vertically -'
 
 # No focus on mouse over (allows scrolling without changing focus)
 focus_follows_mouse no
@@ -172,5 +172,8 @@ exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec --no-startup-id pamac-tray
 exec --no-startup-id xfce4-power-manager
-exec --no-startup-id volumeicon
+#exec --no-startup-id volumeicon
+exec --no-startup-id start-pulseaudio-x11
+exec --no-startup-id pa-applet
+bindsym $mod+Ctrl+m exec pavucontrol
 

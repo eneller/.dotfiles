@@ -19,13 +19,6 @@ alias code='code --extensions-dir "$XDG_DATA_HOME/vscode"'
 alias vscodium='vscodium --extensions-dir "$XDG_DATA_HOME/vscode"'
 export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc-2.0"
 
-# default applications
-export EDITOR=/usr/bin/nvim
-export BROWSER=/usr/bin/firefox
-export TERMINAL=/usr/bin/alacritty
-export EXPLORER=/usr/bin/thunar
-export MAILCLIENT=/usr/bin/neomutt
-export LAUNCHER=dmenu_run
 
 # THEME
 
@@ -40,3 +33,28 @@ export GREEN="#A6E22E"
 export ORANGE="#FD971F"
 export YELLOW="#E6DB74"
 export PURPLE="#AE81FF"
+export FONT="Noto"
+export FONTSIZE="12"
+
+## define the font for dmenu to be used
+DMENU_FN="$FONT-$FONTSIZE"
+## background colour for unselected menu-items
+DMENU_NB="#000000"
+## textcolour for unselected menu-items
+DMENU_NF=$WHITE
+## background colour for selected menu-items
+DMENU_SB=$BLUE
+## textcolour for selected menu-items
+DMENU_SF="#000000"
+## command for the terminal application to be used:
+TERMINAL_CMD="alacritty -e"
+## export our variables
+DMENU_OPTIONS="-fn $DMENU_FN -nb $DMENU_NB -nf $DMENU_NF -sf $DMENU_SF -sb $DMENU_SB"
+
+# default applications
+export EDITOR=/usr/bin/nvim
+export BROWSER=/usr/bin/firefox
+export TERMINAL=/usr/bin/alacritty
+export EXPLORER=/usr/bin/thunar
+export MAILCLIENT=/usr/bin/neomutt
+export LAUNCHER="dmenu_run $DMENU_OPTIONS"
