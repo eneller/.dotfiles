@@ -1,5 +1,5 @@
 /*The following block hides the horizontal tabs for tree style tabs https://github.com/piroor/treestyletab/wiki/Code-snippets-for-custom-style-rules#for-userchromecss 
- * enable 'jtoolkit.legacyUserProfileCustomizations.stylesheets' in 'about:config' for this to work*/
+ * enable 'toolkit.legacyUserProfileCustomizations.stylesheets' in 'about:config' for this to work*/
 
 #main-window[tabsintitlebar="true"]:not([extradragspace="true"]) #TabsToolbar > .toolbar-items {
   opacity: 0;
