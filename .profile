@@ -1,5 +1,7 @@
 # Basic config
 xset r rate 200 35 # set key repeat delay and rate
+# check for autorandr known configs
+autorandr --check
 # Clean Up Home Directory
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"

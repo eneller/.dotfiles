@@ -101,7 +101,7 @@ bindsym $mod+Right		move workspace to output right
 
 # WORKSPACES
 # prior and next ar PgUp and PgDown
-bindsym $mod+Prior		workspace prev
+bindsym $mod+Prior		container prev
 bindsym $mod+Shift+Prior	move container to workspace prev
 bindsym $mod+Next		workspace next
 bindsym $mod+Shift+Next		move container to workspace next

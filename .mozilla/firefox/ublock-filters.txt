@@ -7,7 +7,6 @@ www.youtube.com##ytd-guide-signin-promo-renderer.ytd-guide-renderer.style-scope
 www.youtube.com###guide-links-primary
 www.youtube.com###copyright
 
-
 ! 2020-10-25 https://www.instagram.com
 www.instagram.com##.piCib
 www.instagram.com##.Yx5HN.RnEpo
@@ -73,20 +72,11 @@ www.wg-gesucht.de##.noprint.airbnb_ad.wgg_card.clicked_partner > .row > .card_bo
 www.zeit.de##.paywall-footer__panel
 www.zeit.de##.paywall-footer__header
 
-
-
-
-
-
 ! 2021-01-25 https://moodle.uni-ulm.de
 moodle.uni-ulm.de###loginbackgroundimagetext
 
 ! 2021-01-25 https://www.reddit.com
 www.reddit.com##.jEUbSHJJx8vISKpWirlfx
-
-
-
-
 
 ! 2021-01-30 https://binutils.sourceware.narkive.com
 binutils.sourceware.narkive.com##.pbs-cta-fullscreen.pbs-cta
@@ -100,11 +90,8 @@ www.gut-erklaert.de##.contentBody > span.contentlabel:nth-of-type(1)
 ! 2021-02-04 https://www.youtube.com
 www.youtube.com###logo-icon
 
-
-
 ! 2021-03-09 https://studyflix.de
 studyflix.de##.-enabled.up-can-clean.huge-notification
-
 
 ! 2021-03-26 https://www.sofatutor.com
 www.sofatutor.com##.trial-flow-popup__content
@@ -123,8 +110,6 @@ pimylifeup.com##.jw-reset.jw-media
 pimylifeup.com##.jw-reset.jw-wrapper > .jw-reset.jw-aspect
 pimylifeup.com##.jw-reset.jw-wrapper
 
-
-
 ! 2021-05-25 https://www.technicpack.net
 www.technicpack.net##._5kE-6aUK._9r0K-Oum
 www.technicpack.net##.aJVLc6uP
@@ -133,11 +118,8 @@ www.technicpack.net##.fEy1Z2XT
 ! 2021-05-25 https://hexxit.fandom.com
 hexxit.fandom.com##p:nth-of-type(2)
 
-
 ! 2021-06-17 https://regexr.com
 regexr.com##.noad
-
-
 
 ! 2021-07-06 https://pl.allsportsflix.best
 pl.allsportsflix.best###playerCta-wrapper
@@ -157,7 +139,6 @@ videovak.com##iframe:nth-of-type(3)
 
 gmx.net##+js(nobab)
 ! 2021-05-13 https://ticktick.com
-
 
 ! 2021-10-19 https://www.kuechengoetter.de
 www.kuechengoetter.de##.bplr-touch-overlay
@@ -186,10 +167,6 @@ cloud.oracle.com##.inner-focus-dark.action.oci-banner
 ! 2022-03-03 https://cloud.oracle.com
 cloud.oracle.com##.inner-focus-dark.info.oci-banner
 
-
-
-
-
 ! 2022-03-03 http://web.neller.org
 web.neller.org##div.col:nth-of-type(1)
 
@@ -204,4 +181,9 @@ w2g.tv##.w2g-top-message-small
 
 ! 2022-04-13 https://s.to
 s.to##iframe:nth-of-type(3)
+
+! 2022-08-23 https://open.spotify.com
+open.spotify.com##.Foyk_HJx16yh22JYmQ56 > .eNs6P3JYpf2LScgTDHc6 > .ATUzFKub89lzvkmvhpyE.link-subtle
+open.spotify.com##.Upqw01TOXETOmR5Td7Dj.jyfxNy.Button-y0gtbx-0
+open.spotify.com##.active.WJsKJXEbycxxq8OcGHM1.logo
 

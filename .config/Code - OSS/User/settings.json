@@ -1,0 +1,4 @@
+{
+    "workbench.colorTheme": "Monokai",
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim"
+}
