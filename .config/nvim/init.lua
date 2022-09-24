@@ -1,6 +1,16 @@
 require("plugins")
 require("keybinds")
--- GENERAL SETTINGS
+--- Functional wrapper for mapping custom keybindings
+--- GENERAL SETTINGS
+function map(mode, lhs, rhs, opts)
+    local options = { noremap = true }
+    if opts then
+        options = vim.tbl_extend("force", options, opts)
+    end
+    vim.api.nvim_set_keymap(mode, lhs, rhs, options)
+end
+map("i","<C-c>","<Esc>")
+
 vim.o.termguicolors = true
 vim.cmd('colorscheme monokai') -- set colorscheme
 vim.o.syntax = 'on'

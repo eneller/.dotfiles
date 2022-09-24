@@ -1,4 +1,7 @@
 {
     "workbench.colorTheme": "Monokai",
-    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim"
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+    "terminal.explorerKind": "external",
+    "terminal.external.linuxExec": "alacritty",
+    "editor.minimap.enabled": false
 }

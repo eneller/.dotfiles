@@ -1,0 +1,44 @@
+{
+    "com.github.lighttigerxiv.ulauncher-session-manager": {
+        "id": "com.github.lighttigerxiv.ulauncher-session-manager",
+        "url": "https://github.com/lighttigerXIV/ulauncher-session-manager",
+        "updated_at": "2022-12-31T12:46:06.062960",
+        "last_commit": "fcf75949888eeb5ee5920ca43fc70d28151de33c",
+        "last_commit_time": "2022-12-05T09:13:19"
+    },
+    "com.github.kbialek.ulauncher-bitwarden": {
+        "id": "com.github.kbialek.ulauncher-bitwarden",
+        "url": "https://github.com/kbialek/ulauncher-bitwarden",
+        "updated_at": "2022-12-31T13:03:45.051425",
+        "last_commit": "e5c25ebc24142f064eaebb29f6e473ded6d6b315",
+        "last_commit_time": "2022-10-19T06:09:55"
+    },
+    "com.github.prophet-five.ulauncher-moodle": {
+        "id": "com.github.prophet-five.ulauncher-moodle",
+        "url": "https://github.com/prophet-five/ulauncher-moodle",
+        "updated_at": "2022-12-31T13:04:50.864873",
+        "last_commit": "a02468cfcdb9031cf0874fc4e252d38b33005a57",
+        "last_commit_time": "2021-05-04T21:42:07"
+    },
+    "com.github.lighttigerxiv.ulauncher-terminal-runner-extension": {
+        "id": "com.github.lighttigerxiv.ulauncher-terminal-runner-extension",
+        "url": "https://github.com/lighttigerXIV/ulauncher-terminal-runner-extension/",
+        "updated_at": "2022-12-31T13:07:11.673277",
+        "last_commit": "8cbcf85e8b3a48a45d2d181488af6e5d89bff1b0",
+        "last_commit_time": "2022-05-22T12:33:25"
+    },
+    "com.github.ygun.ulauncher-nm": {
+        "id": "com.github.ygun.ulauncher-nm",
+        "url": "https://github.com/ygun/ulauncher-nm",
+        "updated_at": "2022-12-31T13:13:37.338893",
+        "last_commit": "036a0b3b24fb325f7aa648872c916d04966e7101",
+        "last_commit_time": "2021-02-03T13:17:59"
+    },
+    "com.github.ahaasler.ulauncher-tmux": {
+        "id": "com.github.ahaasler.ulauncher-tmux",
+        "url": "https://github.com/ahaasler/ulauncher-tmux",
+        "updated_at": "2022-12-31T13:16:06.744191",
+        "last_commit": "dd631a2e5a1d8bf2ab21095b43afe068443f02b9",
+        "last_commit_time": "2021-06-05T16:42:59"
+    }
+}

@@ -58,5 +58,6 @@ export EDITOR=/usr/bin/nvim
 export BROWSER=/usr/bin/firefox
 export TERMINAL=/usr/bin/alacritty
 export EXPLORER=/usr/bin/thunar
-export MAILCLIENT=/usr/bin/neomutt
+export MAILCLIENT=/usr/bin/thunderbird
 export LAUNCHER="dmenu_run $DMENU_OPTIONS"
+export LOCKSCREEN="i3lock"
