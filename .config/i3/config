@@ -60,16 +60,21 @@ bar {
 
 # DROPDOWN
 # Scratchpad binds
-# bindsym $mod+p [class="bitwarden"] scratchpad show; move position center
+exec bitwarden-desktop
+for_window [instance="bitwarden"] move scratchpad
+for_window [instance="bitwarden"] sticky enable
+bindsym $mod+p [instance="bitwarden"] scratchpad show;
+
+exec $TERMINAL --class="dropdown_tmux"
+for_window [class="dropdown_tmux"] move scratchpad
+for_window [class="dropdown_tmux"] sticky enable
+bindsym $mod+Shift+space [class="dropdown_tmux"] scratchpad show;
+
 # General dropdown window traits. The order can matter.
 # sticky allows windows to stay visible even when switching workspaces
-for_window [instance="dropdown_*"] sticky enable
-# Specific dropdown window traits
-for_window [instance="dropdown_tmux"] resize set 625 450
-for_window [instance="dropdown_tmux"] border pixel 3
-# start scratchpads
-# exec --no-startup-id bitwarden-desktop
-for_window [class="bitwarden"] move scratchpad
+#for_window [instance="dropdown_tmux"] resize set 625 450
+#for_window [instance="dropdown_tmux"] border pixel 3
+
 
 
 # i3 BINDS
@@ -149,7 +154,6 @@ bindsym $mod+Shift+0	move container to workspace $ws10
 
 # APPLICATION SHORTCUTS
 bindsym $mod+Return			exec --no-startup-id ulauncher-toggle
-bindsym $mod+Shift+Return exec --no-startup-id $LAUNCHER
 bindsym $mod+space 		exec --no-startup-id $TERMINAL
 bindsym $mod+w			exec --no-startup-id $BROWSER
 bindsym $mod+e    exec --no-startup-id $EXPLORER
@@ -182,5 +186,6 @@ exec --no-startup-id xfce4-power-manager
 #exec --no-startup-id volumeicon
 exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id pa-applet
+exec --no-startup-id picom
 bindsym $mod+Ctrl+m exec pavucontrol
 

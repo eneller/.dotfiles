@@ -40,5 +40,26 @@
         "updated_at": "2022-12-31T13:16:06.744191",
         "last_commit": "dd631a2e5a1d8bf2ab21095b43afe068443f02b9",
         "last_commit_time": "2021-06-05T16:42:59"
+    },
+    "com.github.beajeanm.ulauncher-windows-switcher": {
+        "id": "com.github.beajeanm.ulauncher-windows-switcher",
+        "url": "https://github.com/beajeanm/ulauncher-windows-switcher",
+        "updated_at": "2022-12-31T15:56:36.180850",
+        "last_commit": "e746afcd1ae971294f983dadb6ad2c90a730ec39",
+        "last_commit_time": "2022-08-04T22:59:46"
+    },
+    "com.github.fisadev.ulauncher-better-file-browser": {
+        "id": "com.github.fisadev.ulauncher-better-file-browser",
+        "url": "https://github.com/fisadev/ulauncher-better-file-browser",
+        "updated_at": "2022-12-31T16:02:28.785265",
+        "last_commit": "8ec8a0dda09e172de62051cd1f251816ce4af368",
+        "last_commit_time": "2019-09-06T19:20:09"
+    },
+    "com.github.ikorjefocur.ulauncher-commandrunner": {
+        "id": "com.github.ikorjefocur.ulauncher-commandrunner",
+        "url": "https://github.com/IkorJefocur/ulauncher-commandrunner",
+        "updated_at": "2022-12-31T17:01:45.298473",
+        "last_commit": "c306301468cbaba23625bf0ef0639b7ad6602783",
+        "last_commit_time": "2022-03-01T19:34:35"
     }
 }
