@@ -74,3 +74,8 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
+
+pwd()
+{
+  echo "$PWD/$1"
+}
