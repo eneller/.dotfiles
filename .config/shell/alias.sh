@@ -1,13 +1,13 @@
 
-alias ls='ls -hN --group-directories-first --color=auto'											# make output more readable and show directories first
+alias ls='exa'											# make output more readable and show directories first
 alias ll='ls -l'
-alias la='ls --almost-all'
-alias grep='grep --color=auto'														# colorize grep output, set GREP_COLORS
+alias la='ls --all'
+alias grep='rg'														# colorize grep output, set GREP_COLORS
 alias cp="cp -i"                                                					# Confirm before overwriting something
 alias df='df -h'                                                					# Human-readable sizes
-alias free='free -m'
 alias vi='nvim'                                            					# Show sizes in MB
 alias r='R'
+alias xar="xarchiver"
 
 # Add an "alert" alias for long running commands.  Use like so: 'sleep 10; alert'
 alias notify='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -50,32 +50,8 @@ title()
   echo -e "\e]2;$1\007";
 }
 
-#
-# # ex - archive extractor
-# # usage: ex <file>
-ex ()
-{
-  if [ -f $1 ] ; then
-    case $1 in
-      *.tar.bz2)   tar xjf $1   ;;
-      *.tar.gz)    tar xzf $1   ;;
-      *.bz2)       bunzip2 $1   ;;
-      *.rar)       unrar x $1     ;;
-      *.gz)        gunzip $1    ;;
-      *.tar)       tar xf $1    ;;
-      *.tbz2)      tar xjf $1   ;;
-      *.tgz)       tar xzf $1   ;;
-      *.zip)       unzip $1     ;;
-      *.Z)         uncompress $1;;
-      *.7z)        7z x $1      ;;
-      *)           echo "'$1' cannot be extracted via ex()" ;;
-    esac
-  else
-    echo "'$1' is not a valid file"
-  fi
-}
-
 pwd()
 {
   echo "$PWD/$1"
 }
+
