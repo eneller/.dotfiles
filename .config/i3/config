@@ -1,4 +1,5 @@
 # vim: filetype=i3config
+include ~/.config/i3/conf.d/*
 
 # this config is based on github.com:LukeSmithxyz/voidrice 884dcbdc4792eed95e558af84491eb3100d314a2
 # to immediately apply a new config, run `i3-msg reload; i3-msg restart`
@@ -7,55 +8,21 @@
 # You can set these variables in ~/.profile or ~/.bash_profile if you have it as below:
 
 
+# No focus on mouse over (allows scrolling without changing focus)
+focus_follows_mouse no
+# remove title bar
+default_border pixel 1
+default_floating_border pixel 1
 # set modifier key, Mod4 is super (windows), Mod1 = Alt key
 set $mod Mod4 
 bindsym $mod+F12  restart;reload
-# THEME, should use same colors as .profile
-set $black #272822
-set $white #FFFFFF
-set $red #F92672
-set $blue #66D9EF
-set $green #A6E22E
-set $orange #FD971F
-set $yellow #E6DB74
-set $purple #AE81FF
 
-set $allblack #000000
-
-# power options
-set $shutdown shutdown -h now
-set $reboot reboot
-set $hibernate sudo -A systemctl suspend
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 bindsym $mod+d floating toggle
 
 
-font pango:Sans Regular 12
-bar {
-  i3bar_command i3bar
-  status_command i3status 
-#--config $XDG_CONFIG_HOME/i3/i3status.conf
-  mode dock
-  position top
-  #tray_output primary
-#  font xft:Jetbrains mono 20
-  strip_workspace_numbers yes
-  workspace_buttons yes
-
-  colors {
-    background #000000
-    #statusline #F9FAF9
-    #separator  #454947
-    #                   border  bg      text
-    focused_workspace  $allblack $blue $allblack
-    #active_workspace   #FFFFFF $black #FFFFFF
-    #inactive_workspace #FFFFFF $black #FFFFFF
-    #binding_mode       #16a085 #2C2C2C #F9FAF9
-    urgent_workspace   $red $black $red
-  }
-}
 
 
 # DROPDOWN
@@ -97,11 +64,6 @@ bindsym $mod+t      layout toggle tabbed splith
 bindsym $mod+Shift+v			split h;exec notify-send 'tile horizontally |'
 bindsym $mod+v			split v;exec notify-send 'tile vertically -'
 
-# No focus on mouse over (allows scrolling without changing focus)
-focus_follows_mouse no
-# remove title bar
-default_border pixel 1
-default_floating_border pixel 1
 
 # ARROW KEYS
 bindsym $mod+Left		move workspace to output left
@@ -156,20 +118,19 @@ bindsym $mod+Shift+0	move container to workspace $ws10
 bindsym $mod+Return			exec --no-startup-id "ulauncher-toggle"
 bindsym $mod+space 		exec --no-startup-id $TERMINAL
 bindsym $mod+w			exec --no-startup-id $BROWSER
+bindsym $mod+Shift+w exec --no-startup-id "$BROWSER -profile ~/.mozilla/firefox/2ustnzbw.shopping"
 bindsym $mod+e    exec --no-startup-id $EXPLORER
 bindsym $mod+m    exec --no-startup-id $MAILCLIENT
 bindsym $mod+Escape exec --no-startup-id $LOCKSCREEN
+# TODO add import path/to/img.png to make a screenshot
+bindsym --release $mod+s exec  "import ~/Pictures/screenshots/$(date '+%y_%m_%d-%H_%M_%S').png"
+bindsym $mod+Shift+s exec  "import -window root ~/Pictures/screenshots/$(date 'import ~/Pictures/screenshots/$(date '+%y_%m_%d-%H_%M_%S').png"
 # i3lock for locking, i3-msg exit for logout
 # Show selection:
 #bindsym $mod+Insert		exec --no-startup-id showclip
 
 
 
-# class                 border  bg.    text    indicator child_border
-client.focused          $blue  $black $blue   $blue   $blue
-client.focused_inactive $black  $black $blue   $black  $black
-client.unfocused        $black  $black $white  $black  $black
-client.background		    $black
 
 # AUTOSTART
 # start polkit for pacman

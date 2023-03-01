@@ -1,7 +1,5 @@
 # Basic config
 xset r rate 200 35 # set key repeat delay and rate
-# check for autorandr known configs
-autorandr --check
 # Clean Up Home Directory
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
@@ -38,21 +36,6 @@ export PURPLE="#AE81FF"
 export FONT="Noto"
 export FONTSIZE="12"
 
-## define the font for dmenu to be used
-DMENU_FN="$FONT-$FONTSIZE"
-## background colour for unselected menu-items
-DMENU_NB="#000000"
-## textcolour for unselected menu-items
-DMENU_NF=$WHITE
-## background colour for selected menu-items
-DMENU_SB=$BLUE
-## textcolour for selected menu-items
-DMENU_SF="#000000"
-## command for the terminal application to be used:
-TERMINAL_CMD="alacritty -e"
-## export our variables
-DMENU_OPTIONS="-fn $DMENU_FN -nb $DMENU_NB -nf $DMENU_NF -sf $DMENU_SF -sb $DMENU_SB"
-
 # default applications
 export EDITOR=/usr/bin/nvim
 export BROWSER=/usr/bin/firefox
@@ -60,4 +43,3 @@ export TERMINAL=/usr/bin/alacritty
 export EXPLORER=/usr/bin/thunar
 export MAILCLIENT=/usr/bin/thunderbird
 export LAUNCHER="ulauncher-toggle"
-export LOCKSCREEN="i3lock"

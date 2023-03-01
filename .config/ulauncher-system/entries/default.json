@@ -1,8 +1,11 @@
 {
   "lock": {
-    "command": "i3lock & sleep 5 && xset dpms force off"
+    "command": "i3lock & sleep 2 && xset dpms force off"
   },
   "suspend": {
-    "command": "i3lock & systemctl suspend"
+    "command": "i3lock & sleep 2 && systemctl suspend"
+  },
+  "hibernate": {
+    "command": "i3lock & sleep 2 && systemctl hibernate"
   }
 }
