@@ -2,6 +2,7 @@
 alias ls='exa'											# make output more readable and show directories first
 alias ll='ls -l'
 alias la='ls --all'
+alias less='less --use-color'
 alias grep='rg'														# colorize grep output, set GREP_COLORS
 alias cp="cp -i"                                                					# Confirm before overwriting something
 alias df='df -h'                                                					# Human-readable sizes
