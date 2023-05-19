@@ -19,6 +19,7 @@ export CARGO_HOME="$XDG_DATA_HOME/cargo"
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
 alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 alias code='code --extensions-dir "$XDG_DATA_HOME/vscode"'
+alias dict='dict -c "$XDG_CONFIG_HOME"/dict/dictrc '
 
 
 # THEME
