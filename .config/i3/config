@@ -16,6 +16,7 @@ default_floating_border pixel 1
 # set modifier key, Mod4 is super (windows), Mod1 = Alt key
 set $mod Mod4 
 bindsym $mod+F12  restart;reload
+bindsym $mod+Escape exec i3lock -c 000000 & sleep 2 && xset dpms force off
 
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -115,14 +116,12 @@ bindsym $mod+Shift+0	move container to workspace $ws10
 
 
 # APPLICATION SHORTCUTS
-bindsym $mod+Return			exec --no-startup-id "ulauncher-toggle"
-bindsym $mod+Shift+Return			exec --no-startup-id "rofi -show"
+bindsym $mod+Return			exec --no-startup-id "rofi -show"
 bindsym $mod+Shift+space 		exec --no-startup-id $TERMINAL
 bindsym $mod+w			exec --no-startup-id $BROWSER
 bindsym $mod+Shift+w exec --no-startup-id "$BROWSER -profile ~/.mozilla/firefox/2ustnzbw.shopping"
 bindsym $mod+e    exec --no-startup-id $EXPLORER
 bindsym $mod+m    exec --no-startup-id $MAILCLIENT
-bindsym $mod+Escape exec --no-startup-id $LOCKSCREEN
 # TODO add import path/to/img.png to make a screenshot
 bindsym --release $mod+s exec  "import ~/Pictures/screenshots/$(date '+%y_%m_%d-%H_%M_%S').png"
 #bindsym $mod+Shift+s exec  "import -window root ~/Pictures/screenshots/$(date 'import ~/Pictures/screenshots/$(date '+%y_%m_%d-%H_%M_%S').png"
@@ -151,4 +150,9 @@ exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id pa-applet
 exec --no-startup-id picom
 bindsym $mod+Ctrl+m exec pavucontrol
+# detect screen configurations
+exec --no-startup-id autorandr -c
+# set key repeat delay and rate 
+exec --no-startup-id xset r rate 200 35
+
 

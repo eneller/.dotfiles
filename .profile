@@ -44,4 +44,3 @@ export BROWSER=/usr/bin/firefox
 export TERMINAL=/usr/bin/alacritty
 export EXPLORER=/usr/bin/thunar
 export MAILCLIENT=/usr/bin/thunderbird
-export LAUNCHER="ulauncher-toggle"
