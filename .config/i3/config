@@ -16,7 +16,8 @@ default_floating_border pixel 1
 # set modifier key, Mod4 is super (windows), Mod1 = Alt key
 set $mod Mod4 
 bindsym $mod+F12  restart;reload
-bindsym $mod+Escape exec i3lock -c 000000 & sleep 2 && xset dpms force off
+bindsym $mod+Escape exec i3lock -c 000000 & sleep 2 && systemctl suspend
+bindsym $mod+Shift+Escape exec i3lock -c 000000 & sleep 2 && xset dpms force off
 
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -124,7 +125,7 @@ bindsym $mod+e    exec --no-startup-id $EXPLORER
 bindsym $mod+m    exec --no-startup-id $MAILCLIENT
 # TODO add import path/to/img.png to make a screenshot
 bindsym --release $mod+s exec  "import ~/Pictures/screenshots/$(date '+%y_%m_%d-%H_%M_%S').png"
-#bindsym $mod+Shift+s exec  "import -window root ~/Pictures/screenshots/$(date 'import ~/Pictures/screenshots/$(date '+%y_%m_%d-%H_%M_%S').png"
+bindsym $mod+Shift+s exec  "import -window root ~/Pictures/screenshots/$(date '+%y_%m_%d-%H_%M_%S').png"
 # i3lock for locking, i3-msg exit for logout
 # Show selection:
 #bindsym $mod+Insert		exec --no-startup-id showclip
