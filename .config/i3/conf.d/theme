@@ -1,0 +1,46 @@
+# vim: filetype=i3config
+
+font pango:Sans Regular 12
+# THEME, should use same colors as .profile
+set $black #272822
+set $white #FFFFFF
+set $red #F92672
+set $blue #66D9EF
+set $green #A6E22E
+set $orange #FD971F
+set $yellow #E6DB74
+set $purple #AE81FF
+
+set $allblack #000000
+
+# class                 border  bg.    text    indicator child_border
+client.focused          $blue  $black $blue   $blue   $blue
+client.focused_inactive $black  $black $blue   $black  $black
+client.unfocused        $black  $black $white  $black  $black
+client.background		    $black
+
+
+bar {
+  i3bar_command i3bar
+  status_command i3status
+#--config $XDG_CONFIG_HOME/i3/i3status.conf
+  mode dock
+  position top
+  #tray_output primary
+#  font xft:Jetbrains mono 20
+  strip_workspace_numbers yes
+  workspace_buttons yes
+
+  colors {
+    background #000000
+    #statusline #F9FAF9
+    #separator  #454947
+    #                   border  bg      text
+    focused_workspace  $allblack $blue $allblack
+    #active_workspace   #FFFFFF $black #FFFFFF
+    #inactive_workspace #FFFFFF $black #FFFFFF
+    #binding_mode       #16a085 #2C2C2C #F9FAF9
+    urgent_workspace   $red $black $red
+  }
+}
+
