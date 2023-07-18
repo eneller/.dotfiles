@@ -18,6 +18,8 @@ packer.startup(function()
   local use = use
   use 'neovim/nvim-lspconfig'
   use 'nvim-treesitter/nvim-treesitter'
+  use 'kylechui/nvim-surround'
+  -- use nvim-leap
   end
 )
 --[[ PLUGIN CONFIGURATION

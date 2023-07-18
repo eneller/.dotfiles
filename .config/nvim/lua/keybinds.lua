@@ -1,4 +1,5 @@
 -- filetype-specific keybinds can be found in the ftplugin folder, requires 'filetype plugin on'
+-- Functional wrapper for mapping custom keybindings
 function map(mode, lhs, rhs, opts)
     local options = { noremap = true }
     if opts then

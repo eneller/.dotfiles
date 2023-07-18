@@ -17,7 +17,8 @@ default_floating_border pixel 1
 set $mod Mod4 
 bindsym $mod+F12  restart;reload
 bindsym $mod+Escape exec i3lock -c 000000 & sleep 2 && systemctl suspend
-bindsym $mod+Shift+Escape exec i3lock -c 000000 & sleep 2 && xset dpms force off
+bindsym $mod+Shift+Escape exec systemctl poweroff
+#bindsym $mod+Shift+Escape exec i3lock -c 000000 & sleep 2 && xset dpms force off
 
 
 # Use Mouse+$mod to drag floating windows to their wanted position
