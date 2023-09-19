@@ -151,6 +151,7 @@ exec --no-startup-id xfce4-power-manager
 exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id pa-applet
 exec --no-startup-id picom
+exec --no-startup-id /usr/bin/nextcloud --background
 bindsym $mod+Ctrl+m exec pavucontrol
 # detect screen configurations
 exec --no-startup-id autorandr -c
