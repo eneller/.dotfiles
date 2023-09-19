@@ -1,6 +1,8 @@
 
-alias ls='exa'											# make output more readable and show directories first
-alias ll='ls -l'
+alias tree='eza --tree'
+alias ls='eza'											# make output more readable and show directories first
+alias ll='ls --long --header --git'
+alias li='ls --git-ignore'
 alias la='ls --all'
 alias less='less --use-color'
 alias grep='rg'														# colorize grep output, set GREP_COLORS
