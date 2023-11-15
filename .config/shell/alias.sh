@@ -1,4 +1,5 @@
 
+alias diff='diff -u --color'
 alias tree='eza --tree'
 alias ls='eza'											# make output more readable and show directories first
 alias ll='ls --long --header --git'
@@ -13,11 +14,25 @@ alias r='R'
 alias xar="xarchiver"
 
 # Add an "alert" alias for long running commands.  Use like so: 'sleep 10; alert'
-alias notify='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias notify='notify-send --urgency=normal -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 #Add a "dotfiles" alias for .dotfile git repo
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 #alias 'dotfiles-update'='dotfiles commit -a && dotfiles push'
+
+sleep() {
+    if [ "$1" = "-m" ]; then
+        if [ -n "$2" ]; then
+            sleep "$(( $2 * 60 ))"
+        else
+            echo "Please provide a duration in minutes after the -m flag."
+        fi
+    else
+        /usr/bin/sleep "$@"
+    fi
+}
+
+
 
 
 colors() {

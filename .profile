@@ -44,3 +44,6 @@ export BROWSER=/usr/bin/firefox
 export TERMINAL=/usr/bin/alacritty
 export EXPLORER=/usr/bin/thunar
 export MAILCLIENT=/usr/bin/thunderbird
+# set BAT as man pager
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANROFFOPT="-c"
