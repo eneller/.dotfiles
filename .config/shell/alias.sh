@@ -1,7 +1,7 @@
 
 alias diff='diff -u --color'
 alias tree='eza --tree'
-alias ls='eza'											# make output more readable and show directories first
+alias ls='eza --group-directories-first'											# make output more readable and show directories first
 alias ll='ls --long --header --git'
 alias li='ls --git-ignore'
 alias la='ls --all'
@@ -12,6 +12,8 @@ alias df='df -h'                                                					# Human-rea
 alias vi='nvim'                                            					# Show sizes in MB
 alias r='R'
 alias xar="xarchiver"
+alias g="git"
+alias py="python"
 
 # Add an "alert" alias for long running commands.  Use like so: 'sleep 10; alert'
 alias notify='notify-send --urgency=normal -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -30,6 +32,11 @@ sleep() {
     else
         /usr/bin/sleep "$@"
     fi
+}
+
+
+pipif() {
+  pip install $1 && pip freeze | rg "$1=" >> requirements.txt
 }
 
 
