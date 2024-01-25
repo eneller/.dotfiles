@@ -123,8 +123,6 @@ bindsym $mod+Shift+space 		exec --no-startup-id $TERMINAL
 bindsym $mod+w			exec --no-startup-id $BROWSER
 bindsym $mod+Shift+w exec --no-startup-id "$BROWSER -profile ~/.mozilla/firefox/2ustnzbw.shopping"
 bindsym $mod+e    exec --no-startup-id $EXPLORER
-bindsym $mod+m    exec --no-startup-id $MAILCLIENT
-# TODO add import path/to/img.png to make a screenshot
 bindsym --release $mod+s exec  "import ~/Pictures/screenshots/$(date '+%y_%m_%d-%H_%M_%S').png"
 bindsym $mod+Shift+s exec  "import -window root ~/Pictures/screenshots/$(date '+%y_%m_%d-%H_%M_%S').png"
 # i3lock for locking, i3-msg exit for logout
