@@ -35,7 +35,7 @@ for_window [instance="bitwarden"] move scratchpad
 for_window [instance="bitwarden"] sticky enable
 bindsym $mod+p [instance="bitwarden"] scratchpad show;
 
-exec $TERMINAL --class="dropdown_tmux" -e 'tmux'
+exec alacritty --class="dropdown_tmux" -e 'tmux'
 for_window [class="dropdown_tmux"] move scratchpad
 for_window [class="dropdown_tmux"] sticky enable
 bindsym $mod+space [class="dropdown_tmux"] scratchpad show;
@@ -119,10 +119,10 @@ bindsym $mod+Shift+0	move container to workspace $ws10
 
 # APPLICATION SHORTCUTS
 bindsym $mod+Return			exec --no-startup-id "rofi -show"
-bindsym $mod+Shift+space 		exec --no-startup-id $TERMINAL
-bindsym $mod+w			exec --no-startup-id $BROWSER
-bindsym $mod+Shift+w exec --no-startup-id "$BROWSER -profile ~/.mozilla/firefox/2ustnzbw.shopping"
-bindsym $mod+e    exec --no-startup-id $EXPLORER
+bindsym $mod+Shift+space 		exec --no-startup-id alacritty
+bindsym $mod+w			exec --no-startup-id firefox
+bindsym $mod+Shift+w exec --no-startup-id "firefox -profile ~/.mozilla/firefox/2ustnzbw.shopping"
+bindsym $mod+e    exec --no-startup-id thunar
 bindsym --release $mod+s exec  "import ~/Pictures/screenshots/$(date '+%y_%m_%d-%H_%M_%S').png"
 bindsym $mod+Shift+s exec  "import -window root ~/Pictures/screenshots/$(date '+%y_%m_%d-%H_%M_%S').png"
 # i3lock for locking, i3-msg exit for logout
