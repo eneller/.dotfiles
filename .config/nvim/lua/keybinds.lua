@@ -9,8 +9,8 @@ function map(mode, lhs, rhs, opts)
 end
 
 -- frankly i dont know what the hell im doing
-map("n", "<Enter>", "i<Enter><Esc>k$")
+map("n", "<Enter>", "i<Enter><Esc>k$") -- Enter in normal moves the current line down
+-- map("n", "<Space>", "i<Space><Esc>") -- Space in normal inserts a space, shifting the current character to the right
 -- map("n", "<S-Enter>", "d$O<Esc>p^")
--- map("n", "<Space>", "i<Space><Esc>")
-map("n", "<A-Space>", "<Esc>")
+map("n", "<A-Space>", "<Esc>") -- Alt+Space goes to normal mode using Esc
 

@@ -14,6 +14,8 @@ alias r='R'
 alias xar="xarchiver"
 alias g="git"
 alias py="python"
+alias t="dict"
+
 
 # Add an "alert" alias for long running commands.  Use like so: 'sleep 10; alert'
 alias notify='notify-send --urgency=normal -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -33,14 +35,6 @@ sleep() {
         /usr/bin/sleep "$@"
     fi
 }
-
-
-pipif() {
-  pip install $1 && pip freeze | rg "$1=" >> requirements.txt
-}
-
-
-
 
 colors() {
 	local fgc bgc vals seq0
@@ -69,13 +63,15 @@ colors() {
 	done
 }
 
-# set title in zsh (for alacritty)
-title()
+wttr() #alternatively use schachmat/wego
 {
-  echo -e "\e]2;$1\007";
+  for city in "$@"; do
+    curl "wttr.in/$city";
+  done
 }
 
-pwd()
+
+pwd() # print path of files
 {
   echo "$PWD/$1"
 }
