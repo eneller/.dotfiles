@@ -1,29 +1,9 @@
 #!/usr/bin/env bash
-
-git_root() {
-  git rev-parse --show-toplevel
-}
-
-# get the relative path of current path according to root of repo
-git_root_relative() {
-    rel=$(git rev-parse --show-prefix)
-    if [ -z "$rel" ]; then
-        # git rev-parse --show-prefix will output empty string when we are in the root dir
-        echo "."
-    else
-        echo "$rel"
-    fi
-}
-
-if test $# -eq 0; then
-    git_root
+# git script that will return the root path of a git project, even if currently in a submodule.
+# uses git >= 2.13 --show-superproject-working-tree
+superproject=$(git rev-parse --show-superproject-working-tree)
+if [ -z "$superproject" ]; then
+  git rev-parse --show-toplevel;
 else
-    case "$1" in
-    -r|--relative)
-        git_root_relative
-        ;;
-    *)
-        git_root
-        ;;
-    esac
+  echo "$superproject";
 fi
