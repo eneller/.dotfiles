@@ -1,0 +1,14 @@
+[alias]
+  diff-words = diff --color-words='[^[:space:]]|([[:alnum:]]|UTF_8_GUARD)+'
+	st = status
+  cm = commit
+  home = rev-parse --show-toplevel 
+	exec = "!exec "
+  # TODO use git-delta
+  # those are just for tab completion
+  root = "!git-root"
+  ignore = "!git-ignore"
+[color]
+	ui = auto
+[branch]
+	sort = -committerdate
