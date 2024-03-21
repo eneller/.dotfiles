@@ -1,0 +1,16 @@
+[user]
+  email = erikneller@gmx.de
+  name = eneller
+[alias]
+  diff-words = diff --color-words='[^[:space:]]|([[:alnum:]]|UTF_8_GUARD)+'
+  st = status
+  cm = commit
+  # TODO use git-delta
+  # the following aliases are defined as bash scripts, only here for completion
+  home = "!git-home"
+  root = "!git-root"
+  ignore = "!git-ignore"
+[color]
+  ui = auto
+[branch]
+  sort = -committerdate

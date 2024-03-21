@@ -27,5 +27,5 @@ exec_always {
 }
 
 input "5824:10203:MoErgo_Glove80_Left_Keyboard" {
-	xkb_layout "us"
+	xkb_layout "eu"
 }

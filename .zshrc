@@ -528,3 +528,4 @@ alias personal='cp -Rf /personal/* ~'
 #cpufetch
 #colorscript random
 #hyfetch
+alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'

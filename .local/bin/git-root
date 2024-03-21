@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# git script that will return the root path of a git project, even if currently in a submodule.
+# can be used to execute commands in the root directory as well.
+# uses git >= 2.13 --show-superproject-working-tree
+path=$(git rev-parse --show-superproject-working-tree)
+[[ $? -ne 0 ]] && exit $?
+if [ -z "$path" ]; then
+  path=$(git rev-parse --show-toplevel);
+fi
+if [ $# -eq 0 ]; then
+  echo "$path";
+else
+  cd $path && exec "$@";
+fi

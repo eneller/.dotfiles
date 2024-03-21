@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# git script that will return the path of the current git project.
+# can be used to execute commands in the directory as well.
+# uses git >= 2.13 --show-superproject-working-tree
+path=$(git rev-parse --show-toplevel);
+[[ $? -ne 0 ]] && exit $?
+if [ $# -eq 0 ]; then
+  echo "$path";
+else
+  cd $path && exec "$@";
+fi
