@@ -170,4 +170,5 @@ configuration {
       sorting-method:    "name";
   }
 }
-@theme "theme" // read theme in ./theme.rasi
+//@theme "theme" // read theme in ./theme.rasi
+@theme "/usr/share/rofi/themes/Monokai.rasi"

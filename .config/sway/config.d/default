@@ -2,6 +2,7 @@
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
 bindsym $mod+F12 reload
+bindsym $mod+Shift+Escape exec systemctl poweroff
 focus_follows_mouse no
 
 # Variables to set
@@ -46,10 +47,7 @@ bindsym $mod+F9 exec lollypop
 bindsym $mod+F10 exec spotify
 bindsym $mod+F11 exec rofi -show drun
 
-## xfce4-terminal
-bindsym f12 exec xfce4-terminal --drop-down
 
-# Start a terminal
 bindsym $mod+Return exec "rofi -show"
 bindsym $mod+Shift+Space exec $terminal
 
@@ -97,10 +95,8 @@ bindsym Alt+Up exec variety --pause
 bindsym Alt+Down exec variety --resume
 
 # task manager
-bindsym Ctrl+Shift+Escape exec kitty -e btop
-bindsym Ctrl+Alt+End exec kitty -e btop
 
-bindsym $mod+Escape exec ~/.config/sway/scripts/wkill.sh
+#bindsym $mod+Escape exec ~/.config/sway/scripts/wkill.sh
 
 # CONTROL + ALT
 bindsym Ctrl+Alt+b exec thunar
@@ -176,9 +172,7 @@ bindsym Ctrl+Alt+s exec spotify
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
-    bindsym $mod+t layout toggle split
+    bindsym $mod+t layout toggle tabbed splith
 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
@@ -187,7 +181,7 @@ bindsym Ctrl+Alt+s exec spotify
     bindsym $mod+d floating toggle
 
     # Swap focus between the tiling area and the floating area
-    bindsym $mod+space focus mode_toggle
+    #bindsym $mod+space focus mode_toggle
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
