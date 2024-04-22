@@ -1,3 +1,15 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+source ~/.profile
+source ~/.p10k.zsh
+source $XDG_CONFIG_HOME/shell/alias.sh
+#[[ ! -f "$ZDOTDIR/.p10k.zsh" ]] || source "$ZDOTDIR/.p10k.zsh"									# To customize prompt, run `p10k configure` or edit ~/.config/zsh/p10k.zsh
+#eval "$(starship init zsh)" # starship.rs prompt to replace p10k
 #OPTIONS SECTION
 
 #unsetopt beep																		# try disabling annoying beep sounds
@@ -55,7 +67,6 @@ WORDCHARS=${WORDCHARS//\/[&.;]}                                 					# Don't con
 
 
 
-source $XDG_CONFIG_HOME/shell/alias.sh
 
 
 #KEYBINDINGS SECTION (use 'cat -v' or 'od -c' to see raw keyboard output)
@@ -105,8 +116,6 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 	#ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]=fg=009
 	#ZSH_HIGHLIGHT_STYLES[assign]=none
 
-	[[ ! -f "$ZDOTDIR/p10k.zsh" ]] || source "$ZDOTDIR/p10k.zsh"									# To customize prompt, run `p10k configure` or edit ~/.config/zsh/p10k.zsh
-  #eval "$(starship init zsh)" # starship.rs prompt to replace p10k
 
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 			# load fish-completion, needs to be sourced after syntax highlighting
