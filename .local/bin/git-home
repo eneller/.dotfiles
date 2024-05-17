@@ -7,5 +7,5 @@ path=$(git rev-parse --show-toplevel);
 if [ $# -eq 0 ]; then
   echo "$path";
 else
-  cd $path && exec "$@";
+  cd $path && eval "$@";
 fi
