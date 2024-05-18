@@ -8,6 +8,10 @@ fi
 source ~/.config/shell/alias.sh
 export EDITOR=nvim
 export VISUAL=$EDITOR
+# set BAT as man pager
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANROFFOPT="-c"
+
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
@@ -18,6 +22,7 @@ setopt nobeep
 autoload -Uz compinit																# load completion
 compinit
 _comp_options+=(globdots)															# Include hidden files.
+eval "$(zoxide init zsh)"
 setopt autocd 																		# allow cd by only entering directory without cd command
 setopt extendedglob																	# Extended globbing. Allows using regular expressions with *
 setopt correct                                                  					# Auto correct mistakes
