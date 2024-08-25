@@ -3,8 +3,8 @@ alias diff='diff -u --color'
 alias tree='eza --tree'
 alias ls='eza --group-directories-first'											# make output more readable and show directories first
 alias ll='ls --long --header --git'
-alias li='ls --git-ignore'
 alias la='ls --all'
+alias li='la --git-ignore'
 alias less='less --use-color'
 alias grep='rg'														# colorize grep output, set GREP_COLORS
 alias cp="cp -i"                                                					# Confirm before overwriting something
@@ -13,8 +13,8 @@ alias vi='nvim'                                            					# Show sizes in 
 alias r='R'
 alias xar="xarchiver"
 alias g="git"
-alias py="python"
-alias t="dict"
+alias u="dict"
+alias todo="rg '(TODO|FIXME|NOTE)'"
 
 
 # Add an "alert" alias for long running commands.  Use like so: 'sleep 10; alert'
@@ -76,3 +76,22 @@ pwd() # print path of files
   echo "$PWD/$1"
 }
 
+ranger() {
+    if [ -z "$RANGER_LEVEL" ]; then
+        /usr/bin/ranger "$@"
+    else
+        exit
+    fi
+}
+
+py() {
+  if [ $# -eq 0 ]; then
+    ipython
+  else
+    python "$@"
+  fi
+}
+
+act() {
+  source .venv/bin/activate
+}

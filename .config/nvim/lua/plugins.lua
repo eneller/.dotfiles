@@ -19,6 +19,7 @@ packer.startup(function()
   use 'neovim/nvim-lspconfig'
   use 'nvim-treesitter/nvim-treesitter'
   use 'kylechui/nvim-surround'
+  use 'stevearc/oil.nvim'
   -- use nvim-leap
   end
 )
@@ -31,4 +32,4 @@ configs.setup {
   }
 }
 ]]--
-
+require("oil").setup()

@@ -121,7 +121,7 @@ bindsym $mod+Shift+0	move container to workspace $ws10
 bindsym $mod+Return			exec --no-startup-id "rofi -show"
 bindsym $mod+Shift+space 		exec --no-startup-id alacritty
 bindsym $mod+w			exec --no-startup-id firefox
-bindsym $mod+Shift+w exec --no-startup-id "firefox -profile ~/.mozilla/firefox/2ustnzbw.shopping"
+# bindsym $mod+Shift+w exec --no-startup-id "firefox -profile ~/.mozilla/firefox/2ustnzbw.shopping"
 bindsym $mod+e    exec --no-startup-id thunar
 bindsym --release $mod+s exec  "import ~/Pictures/screenshots/$(date '+%y_%m_%d-%H_%M_%S').png"
 bindsym $mod+Shift+s exec  "import -window root ~/Pictures/screenshots/$(date '+%y_%m_%d-%H_%M_%S').png"
@@ -137,7 +137,7 @@ bindsym $mod+Shift+s exec  "import -window root ~/Pictures/screenshots/$(date '+
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 
 # DESKTOP STUFF
 # set background picture
-exec --no-startup-id nitrogen --set-zoom-fill $HOME/.config/i3/bg.png 
+exec --no-startup-id nitrogen --set-tiled $HOME/.config/i3/eurkey.png 
 
 # try to start tray tools / applets manually
 exec --no-startup-id nm-applet 
