@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# gh-cli shortcut to upload a repo to github
+# takes an optional flag --private 
+# and an optional parameter which repo should be uploaded, defaults to CWD
+if [ "$1" = "--private" ]; then
+  gh repo create --push --private --source ${2-.}
+else
+  gh repo create --push --public --source ${2-.}
+fi
+
