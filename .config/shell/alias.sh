@@ -14,7 +14,7 @@ alias r='R'
 alias xar="xarchiver"
 alias g="git"
 alias u="dict"
-alias todo="rg '(TODO|FIXME|NOTE)'"
+alias todo="rg -A 1 -B 1 '(TODO|FIXME|NOTE)'"
 
 
 # Add an "alert" alias for long running commands.  Use like so: 'sleep 10; alert'
@@ -63,14 +63,7 @@ colors() {
 	done
 }
 
-wttr() #alternatively use schachmat/wego
-{
-  for city in "$@"; do
-    curl "wttr.in/$city";
-  done
-}
-
-
+#alternatively use schachmat/wego for weather
 pwd() # print path of files
 {
   echo "$PWD/$1"
@@ -93,5 +86,9 @@ py() {
 }
 
 act() {
-  source .venv/bin/activate
+  args="$@"
+  if [ $# -eq 0 ]; then
+    args="./.venv"
+  fi
+  source "$args/bin/activate"
 }
