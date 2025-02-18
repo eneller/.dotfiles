@@ -2,7 +2,7 @@
 alias diff='diff -u --color'
 alias tree='eza --tree'
 alias ls='eza --group-directories-first'											# make output more readable and show directories first
-alias ll='ls --long --header --git'
+alias ll='ls --long --header --git' #might use -i to show number of hard links like ls -l would normally
 alias la='ls --all'
 alias li='la --git-ignore'
 alias less='less --use-color'

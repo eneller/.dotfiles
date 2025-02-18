@@ -16,6 +16,7 @@ source $XDG_CONFIG_HOME/shell/alias.sh
 #unsetopt beep																		# try disabling annoying beep sounds
 setopt nobeep
 xset b off
+fpath+=~/.zfunc # add custom completions here
 autoload -Uz compinit																# load completion
 compinit
 _comp_options+=(globdots)															# Include hidden files.
