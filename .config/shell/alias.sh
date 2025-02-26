@@ -1,12 +1,11 @@
 
-alias diff='diff -u --color'
+alias diff='diff --color'
 alias tree='eza --tree'
 alias ls='eza --group-directories-first'											# make output more readable and show directories first
 alias ll='ls --long --header --git' #might use -i to show number of hard links like ls -l would normally
 alias la='ls --all'
 alias li='la --git-ignore'
 alias less='less --use-color'
-alias grep='rg'														# colorize grep output, set GREP_COLORS
 alias cp="cp -i"                                                					# Confirm before overwriting something
 alias df='df -h'                                                					# Human-readable sizes
 alias vi='nvim'                                            					# Show sizes in MB

@@ -21,6 +21,7 @@ alias code='code --extensions-dir "$XDG_DATA_HOME/vscode"'
 alias dict='dict -c "$XDG_CONFIG_HOME"/dict/dictrc '
 
 export PATH="$PATH:$(gem env user_gemhome)/bin"
+export PATH="$(yarn global bin):$PATH"
 
 # THEME
 
