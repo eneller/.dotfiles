@@ -11,6 +11,7 @@
   root = "!git-root"
 	ignore = "!git-ignore"
 	ignore-io = "!gi() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ ;}; gi"
+  co = "checkout"
 [color]
 	ui = auto
 [branch]

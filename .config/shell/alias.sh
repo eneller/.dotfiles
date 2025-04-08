@@ -14,6 +14,7 @@ alias xar="xarchiver"
 alias g="git"
 alias u="dict"
 alias todo="rg -A 1 -B 1 '(TODO|FIXME|NOTE)'"
+alias open="xdg-open"
 
 
 # Add an "alert" alias for long running commands.  Use like so: 'sleep 10; alert'
