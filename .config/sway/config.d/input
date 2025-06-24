@@ -14,18 +14,14 @@ input type:touchpad {
 #
 # Change or switch the next setting
 input type:keyboard {
-	xkb_layout "de"
+	xkb_layout eu
 	xkb_numlock enabled
 	repeat_delay 200
 	repeat_rate 35
 
 }
 
-exec_always {
-   'swaymsg input type:keyboard xkb_layout "$(localectl status | grep "X11 Layout" | sed -e "s/^.*X11 Layout://")"'
-   'swaymsg input type:keyboard xkb_variant "$(localectl status | grep "X11 Variant" | sed -e "s/^.*X11 Variant://")"'
-}
 
 input "5824:10203:MoErgo_Glove80_Left_Keyboard" {
-	xkb_layout "eu"
+	xkb_layout eu
 }

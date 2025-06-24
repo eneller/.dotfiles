@@ -15,9 +15,6 @@ exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # Desktop notifications
 exec mako -c ~/.config/sway/mako/config
  
-# Autotiling
-exec autotiling
-
 # Wlsunset - night colors - install this application
 # exec ~/.config/sway/scripts/light.sh
 
@@ -26,6 +23,7 @@ exec dex -a -s /etc/xdg/autostart/:~/.config/autostart/
 
 # nm-applet
 exec nm-applet --indicator
+exec blueman-tray
 
 # Clipman wl-paste
 # exec clipman restore

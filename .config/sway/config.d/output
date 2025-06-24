@@ -1,4 +1,6 @@
 ### Output configuration
+output DP_2 resolution 2560x1440 pos 0 0
+output DP_3 resolution 2560x1440 pos 2560 0
 #
 # Example configuration:
 #

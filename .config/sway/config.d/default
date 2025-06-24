@@ -78,29 +78,11 @@ bindsym $mod+Ctrl+c exec killall conky
 bindsym Ctrl+Alt+Next exec conky-rotate -n
 bindsym Ctrl+Alt+Prior exec conky-rotate -p
 
-# Variety
-# trash wallpaper
-bindsym Alt+t exec variety -t
-# next wallpaper
-bindsym Alt+n exec variety -n
-bindsym Shift+Alt+n exec variety -n && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)
-bindsym Alt+Right exec variety -n
-# previous wallpaper
-bindsym Alt+p exec variety -p
-bindsym Alt+Left exec variety -p
-# favorite wallpaper
-bindsym Alt+f exec variety -f
-# pause wallpaper
-bindsym Alt+Up exec variety --pause
-# resume wallpaper
-bindsym Alt+Down exec variety --resume
-
-# task manager
 
 #bindsym $mod+Escape exec ~/.config/sway/scripts/wkill.sh
 
 # CONTROL + ALT
-bindsym Ctrl+Alt+b exec thunar
+bindsym $mod+e exec thunar
 bindsym Ctrl+Alt+f exec firefox
 bindsym Ctrl+Alt+g exec chromium
 bindsym Ctrl+Alt+p exec pamac-manager

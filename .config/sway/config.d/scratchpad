@@ -1,0 +1,19 @@
+# vim: filetype=i3config
+# Scratchpad binds
+exec_always bitwarden-desktop
+for_window [instance="bitwarden"] move scratchpad
+for_window [instance="bitwarden"] sticky enable
+for_window [instance="bitwarden"] resize set height 1200 900
+bindsym $mod+p [instance="bitwarden"] scratchpad show;
+
+exec_always alacritty --class="dropdown_tmux" -e 'tmux'
+for_window [app_id="dropdown_tmux"] move scratchpad
+for_window [app_id="dropdown_tmux"] floating enable
+for_window [app_id="dropdown_tmux"] sticky enable
+for_window [app_id="dropdown_tmux"] resize set height 900 width 1200
+bindsym $mod+Space [app_id="dropdown_tmux"] scratchpad show
+
+# General dropdown window traits. The order can matter.
+# sticky allows windows to stay visible even when switching workspaces
+#for_window [instance="dropdown_tmux"] border pixel 3
+
