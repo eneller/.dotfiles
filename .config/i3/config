@@ -63,6 +63,7 @@ bindsym $mod+Ctrl+l		resize shrink width 1 px or 1 ppt
 bindsym $mod+Shift+r		exec --no-startup-id winresize
 bindsym $mod+f			fullscreen toggle
 bindsym $mod+q [con_id="__focused__" instance="^(?!dropdown_).*$"] kill
+bindsym $mod+Shift+q [con_id="__focused__" instance="^(?!dropdown_).*$"] kill -s 9
 bindsym $mod+t      layout toggle tabbed splith
 bindsym $mod+Shift+v			split h;exec notify-send 'tile horizontally |'
 bindsym $mod+v			split v;exec notify-send 'tile vertically -'

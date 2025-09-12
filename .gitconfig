@@ -16,3 +16,7 @@
 	ui = auto
 [branch]
 	sort = -committerdate
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true

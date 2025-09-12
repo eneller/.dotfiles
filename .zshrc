@@ -26,6 +26,9 @@ setopt extendedglob																	# Extended globbing. Allows using regular ex
 setopt correct                                                  					# Auto correct mistakes
 setopt numericglobsort                                          					# Sort filenames numerically when it makes sense
 setopt appendhistory    					                                        # Immediately append history instead of overwriting
+setopt sharehistory
+export HISTSIZE=10000
+export SAVEHIST=10000
 HISTFILE=~/.history
 
 zstyle ':completion:*' special-dirs true											# complete hidden directories
